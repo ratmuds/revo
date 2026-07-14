@@ -1,0 +1,565 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/64282f04fc08a56fd654aee0/w/7bfaa89faa95d07bc52ebc60/e/3c6d8e351fb6e95213507cba -->
+<mujoco model="F:\revo\urdftest\my-robot">
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+  <default>
+    <default class="F:\revo\urdftest\my-robot">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="50" dampratio="1"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  <worldbody>
+    <!-- Link table_mount_lid -->
+    <body name="table_mount_lid" pos="0 0 0" quat="1 0 0 0" childclass="F:\revo\urdftest\my-robot">
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part table_mount_lid -->
+      <geom type="mesh" class="visual" pos="0.165797 -0.779802 0.471665" quat="1 -0 0 0" mesh="table_mount_lid" material="table_mount_lid_material"/>
+      <geom type="mesh" class="collision" pos="0.165797 -0.779802 0.471665" quat="1 -0 0 0" mesh="table_mount_lid" material="table_mount_lid_material"/>
+      <!-- Part dsservo_150kg_80kg_60kg_v1 -->
+      <geom type="mesh" class="visual" pos="0.165797 -0.779802 0.471665" quat="1 -0 0 0" mesh="dsservo_150kg_80kg_60kg_v1" material="dsservo_150kg_80kg_60kg_v1_material"/>
+      <geom type="mesh" class="collision" pos="0.165797 -0.779802 0.471665" quat="1 -0 0 0" mesh="dsservo_150kg_80kg_60kg_v1" material="dsservo_150kg_80kg_60kg_v1_material"/>
+      <!-- Part table_mount_clamp -->
+      <geom type="mesh" class="visual" pos="0.165797 -0.779802 0.471665" quat="1 -0 0 0" mesh="table_mount_clamp" material="table_mount_clamp_material"/>
+      <geom type="mesh" class="collision" pos="0.165797 -0.779802 0.471665" quat="1 -0 0 0" mesh="table_mount_clamp" material="table_mount_clamp_material"/>
+      <!-- Part table_mount -->
+      <geom type="mesh" class="visual" pos="0.165797 -0.779802 0.471665" quat="1 -0 0 0" mesh="table_mount" material="table_mount_material"/>
+      <geom type="mesh" class="collision" pos="0.165797 -0.779802 0.471665" quat="1 -0 0 0" mesh="table_mount" material="table_mount_material"/>
+      <!-- Link dsservo_150kg_80kg_60kg_v1 -->
+      <body name="dsservo_150kg_80kg_60kg_v1" pos="0.163647 -0.755532 0.462096" quat="0 -0.999927 -0.0120664 0">
+        <!-- Joint from table_mount_lid to dsservo_150kg_80kg_60kg_v1 -->
+        <joint axis="0 0 1" name="base_rot" type="hinge"/>
+        <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+        <!-- Part dsservo_150kg_80kg_60kg_v1_2 -->
+        <geom type="mesh" class="visual" pos="0.00194544 0.0194454 -0.0205" quat="0 1 0 0" mesh="dsservo_150kg_80kg_60kg_v1__2" material="dsservo_150kg_80kg_60kg_v1__2_material"/>
+        <geom type="mesh" class="collision" pos="0.00194544 0.0194454 -0.0205" quat="0 1 0 0" mesh="dsservo_150kg_80kg_60kg_v1__2" material="dsservo_150kg_80kg_60kg_v1__2_material"/>
+        <!-- Part motor_holder_lid -->
+        <geom type="mesh" class="visual" pos="0.00194544 0.0194454 -0.0205" quat="0 1 0 0" mesh="motor_holder_lid" material="motor_holder_lid_material"/>
+        <geom type="mesh" class="collision" pos="0.00194544 0.0194454 -0.0205" quat="0 1 0 0" mesh="motor_holder_lid" material="motor_holder_lid_material"/>
+        <!-- Part motor_holder -->
+        <geom type="mesh" class="visual" pos="0.00194544 0.0194454 -0.0205" quat="0 1 0 0" mesh="motor_holder" material="motor_holder_material"/>
+        <geom type="mesh" class="collision" pos="0.00194544 0.0194454 -0.0205" quat="0 1 0 0" mesh="motor_holder" material="motor_holder_material"/>
+        <!-- Link 40x40x10_dc_fan_f3d__v1 -->
+        <body name="40x40x10_dc_fan_f3d__v1" pos="0.0214454 -0.0382546 -0.0205" quat="0.655137 -0.655137 0.266073 0.266073">
+          <!-- Joint from dsservo_150kg_80kg_60kg_v1 to 40x40x10_dc_fan_f3d__v1 -->
+          <joint axis="0 0 1" name="shoulder_lift" type="hinge"/>
+          <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+          <!-- Part mainboard_connector_holder_feet -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="mainboard_connector_holder_feet" material="mainboard_connector_holder_feet_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="mainboard_connector_holder_feet" material="mainboard_connector_holder_feet_material"/>
+          <!-- Part metal_rod_holder -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_holder" material="metal_rod_holder_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_holder" material="metal_rod_holder_material"/>
+          <!-- Part body_top_lid_accent -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="body_top_lid_accent" material="body_top_lid_accent_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="body_top_lid_accent" material="body_top_lid_accent_material"/>
+          <!-- Part dsservo_150kg_80kg_60kg_v1_3 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="dsservo_150kg_80kg_60kg_v1__3" material="dsservo_150kg_80kg_60kg_v1__3_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="dsservo_150kg_80kg_60kg_v1__3" material="dsservo_150kg_80kg_60kg_v1__3_material"/>
+          <!-- Part metal_rod_1 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_1" material="metal_rod_1_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_1" material="metal_rod_1_material"/>
+          <!-- Part bottom -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="bottom" material="bottom_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="bottom" material="bottom_material"/>
+          <!-- Part body_bottom_lid -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="body_bottom_lid" material="body_bottom_lid_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="body_bottom_lid" material="body_bottom_lid_material"/>
+          <!-- Part bearing_reinforcement -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="bearing_reinforcement" material="bearing_reinforcement_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="bearing_reinforcement" material="bearing_reinforcement_material"/>
+          <!-- Part metal_rod -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod" material="metal_rod_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod" material="metal_rod_material"/>
+          <!-- Part 40x40x10_dc_fan_f3d__v1_1 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="40x40x10_dc_fan_f3d__v1_1" material="40x40x10_dc_fan_f3d__v1_1_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="40x40x10_dc_fan_f3d__v1_1" material="40x40x10_dc_fan_f3d__v1_1_material"/>
+          <!-- Part body_top_lid -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="body_top_lid" material="body_top_lid_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="body_top_lid" material="body_top_lid_material"/>
+          <!-- Part arm_body -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="arm_body" material="arm_body_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="arm_body" material="arm_body_material"/>
+          <!-- Part lid -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="lid" material="lid_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="lid" material="lid_material"/>
+          <!-- Part mainboard_connector_holder_feet_2 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="mainboard_connector_holder_feet__2" material="mainboard_connector_holder_feet__2_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="mainboard_connector_holder_feet__2" material="mainboard_connector_holder_feet__2_material"/>
+          <!-- Part metal_rod_holder_2 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_holder__2" material="metal_rod_holder__2_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_holder__2" material="metal_rod_holder__2_material"/>
+          <!-- Part metal_rod_2 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod__2" material="metal_rod__2_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod__2" material="metal_rod__2_material"/>
+          <!-- Part 40x40x10_dc_fan_f3d__v1 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="40x40x10_dc_fan_f3d__v1" material="40x40x10_dc_fan_f3d__v1_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="40x40x10_dc_fan_f3d__v1" material="40x40x10_dc_fan_f3d__v1_material"/>
+          <!-- Part ds5180_head -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="ds5180_head" material="ds5180_head_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="ds5180_head" material="ds5180_head_material"/>
+          <!-- Part bottom_reinforcement -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="bottom_reinforcement" material="bottom_reinforcement_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="bottom_reinforcement" material="bottom_reinforcement_material"/>
+          <!-- Part buck_module_cover -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="buck_module_cover" material="buck_module_cover_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="buck_module_cover" material="buck_module_cover_material"/>
+          <!-- Part metal_rod_1_2 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_1__2" material="metal_rod_1__2_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_1__2" material="metal_rod_1__2_material"/>
+          <!-- Part arm_body_encoder_part -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="arm_body_encoder_part" material="arm_body_encoder_part_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="arm_body_encoder_part" material="arm_body_encoder_part_material"/>
+          <!-- Part main_board_cover -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="main_board_cover" material="main_board_cover_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="main_board_cover" material="main_board_cover_material"/>
+          <!-- Part pico_cover -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="pico_cover" material="pico_cover_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="pico_cover" material="pico_cover_material"/>
+          <!-- Part transparent_bottom_joint_cover -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="transparent_bottom_joint_cover" material="transparent_bottom_joint_cover_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="transparent_bottom_joint_cover" material="transparent_bottom_joint_cover_material"/>
+          <!-- Part encoder_magnet_holder -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="encoder_magnet_holder" material="encoder_magnet_holder_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="encoder_magnet_holder" material="encoder_magnet_holder_material"/>
+          <!-- Part ds5180_head_2 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="ds5180_head__2" material="ds5180_head__2_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="ds5180_head__2" material="ds5180_head__2_material"/>
+          <!-- Part metal_rod_3 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod__3" material="metal_rod__3_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod__3" material="metal_rod__3_material"/>
+          <!-- Part metal_rod_1_3 -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_1__3" material="metal_rod_1__3_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="metal_rod_1__3" material="metal_rod_1__3_material"/>
+          <!-- Part body_bottom_lid_accent -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="body_bottom_lid_accent" material="body_bottom_lid_accent_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="body_bottom_lid_accent" material="body_bottom_lid_accent_material"/>
+          <!-- Part mainboard_connector_holder_top -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="mainboard_connector_holder_top" material="mainboard_connector_holder_top_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="mainboard_connector_holder_top" material="mainboard_connector_holder_top_material"/>
+          <!-- Part mainboard_connector_holder_bottom -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="mainboard_connector_holder_bottom" material="mainboard_connector_holder_bottom_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="mainboard_connector_holder_bottom" material="mainboard_connector_holder_bottom_material"/>
+          <!-- Part encoder_arm -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="encoder_arm" material="encoder_arm_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="encoder_arm" material="encoder_arm_material"/>
+          <!-- Part fan_holder -->
+          <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="fan_holder" material="fan_holder_material"/>
+          <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 0 0 0" mesh="fan_holder" material="fan_holder_material"/>
+          <!-- Link 40x40x10_dc_fan_f3d__v1_2 -->
+          <body name="40x40x10_dc_fan_f3d__v1_2" pos="0.216 2.7539e-05 0.0254306" quat="0 -1 0 0">
+            <!-- Joint from 40x40x10_dc_fan_f3d__v1 to 40x40x10_dc_fan_f3d__v1_2 -->
+            <joint axis="0 0 1" name="elbow_lift" type="hinge" range="-0.8726646259971577 2.6179938779915015"/>
+            <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+            <!-- Part bottom_reinforcement_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="bottom_reinforcement__2" material="bottom_reinforcement__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="bottom_reinforcement__2" material="bottom_reinforcement__2_material"/>
+            <!-- Part metal_rod_1_4 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_1__4" material="metal_rod_1__4_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_1__4" material="metal_rod_1__4_material"/>
+            <!-- Part body_bottom_lid_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="body_bottom_lid__2" material="body_bottom_lid__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="body_bottom_lid__2" material="body_bottom_lid__2_material"/>
+            <!-- Part 40x40x10_dc_fan_f3d__v1_1_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="40x40x10_dc_fan_f3d__v1_1__2" material="40x40x10_dc_fan_f3d__v1_1__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="40x40x10_dc_fan_f3d__v1_1__2" material="40x40x10_dc_fan_f3d__v1_1__2_material"/>
+            <!-- Part metal_rod_holder_3 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_holder__3" material="metal_rod_holder__3_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_holder__3" material="metal_rod_holder__3_material"/>
+            <!-- Part metal_rod_holder_4 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_holder__4" material="metal_rod_holder__4_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_holder__4" material="metal_rod_holder__4_material"/>
+            <!-- Part servo_mg996r_v1 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="servo_mg996r_v1" material="servo_mg996r_v1_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="servo_mg996r_v1" material="servo_mg996r_v1_material"/>
+            <!-- Part encoder_magnet_holder_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="encoder_magnet_holder__2" material="encoder_magnet_holder__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="encoder_magnet_holder__2" material="encoder_magnet_holder__2_material"/>
+            <!-- Part mg996r_top_plate -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mg996r_top_plate" material="mg996r_top_plate_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mg996r_top_plate" material="mg996r_top_plate_material"/>
+            <!-- Part mainboard_connector_holder_bottom_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mainboard_connector_holder_bottom__2" material="mainboard_connector_holder_bottom__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mainboard_connector_holder_bottom__2" material="mainboard_connector_holder_bottom__2_material"/>
+            <!-- Part mainboard_connector_holder_feet_3 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mainboard_connector_holder_feet__3" material="mainboard_connector_holder_feet__3_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mainboard_connector_holder_feet__3" material="mainboard_connector_holder_feet__3_material"/>
+            <!-- Part arm_body_encoder_part_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="arm_body_encoder_part__2" material="arm_body_encoder_part__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="arm_body_encoder_part__2" material="arm_body_encoder_part__2_material"/>
+            <!-- Part 40x40x10_dc_fan_f3d__v1_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="40x40x10_dc_fan_f3d__v1__2" material="40x40x10_dc_fan_f3d__v1__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="40x40x10_dc_fan_f3d__v1__2" material="40x40x10_dc_fan_f3d__v1__2_material"/>
+            <!-- Part main_board_cover_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="main_board_cover__2" material="main_board_cover__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="main_board_cover__2" material="main_board_cover__2_material"/>
+            <!-- Part metal_rod_1_5 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_1__5" material="metal_rod_1__5_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_1__5" material="metal_rod_1__5_material"/>
+            <!-- Part metal_rod_4 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod__4" material="metal_rod__4_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod__4" material="metal_rod__4_material"/>
+            <!-- Part encoder_arm_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="encoder_arm__2" material="encoder_arm__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="encoder_arm__2" material="encoder_arm__2_material"/>
+            <!-- Part metal_rod_5 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod__5" material="metal_rod__5_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod__5" material="metal_rod__5_material"/>
+            <!-- Part body_top_lid_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="body_top_lid__2" material="body_top_lid__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="body_top_lid__2" material="body_top_lid__2_material"/>
+            <!-- Part mainboard_connector_holder_top_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mainboard_connector_holder_top__2" material="mainboard_connector_holder_top__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mainboard_connector_holder_top__2" material="mainboard_connector_holder_top__2_material"/>
+            <!-- Part mg996r_head -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mg996r_head" material="mg996r_head_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mg996r_head" material="mg996r_head_material"/>
+            <!-- Part body_top_lid_accent_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="body_top_lid_accent__2" material="body_top_lid_accent__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="body_top_lid_accent__2" material="body_top_lid_accent__2_material"/>
+            <!-- Part transparent_bottom_joint_cover_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="transparent_bottom_joint_cover__2" material="transparent_bottom_joint_cover__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="transparent_bottom_joint_cover__2" material="transparent_bottom_joint_cover__2_material"/>
+            <!-- Part bottom_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="bottom__2" material="bottom__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="bottom__2" material="bottom__2_material"/>
+            <!-- Part body_bottom_lid_accent_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="body_bottom_lid_accent__2" material="body_bottom_lid_accent__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="body_bottom_lid_accent__2" material="body_bottom_lid_accent__2_material"/>
+            <!-- Part servo_cover -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="servo_cover" material="servo_cover_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="servo_cover" material="servo_cover_material"/>
+            <!-- Part metal_rod_6 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod__6" material="metal_rod__6_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod__6" material="metal_rod__6_material"/>
+            <!-- Part arm_body_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="arm_body__2" material="arm_body__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="arm_body__2" material="arm_body__2_material"/>
+            <!-- Part bearing_reinforcement_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="bearing_reinforcement__2" material="bearing_reinforcement__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="bearing_reinforcement__2" material="bearing_reinforcement__2_material"/>
+            <!-- Part fan_holder_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="fan_holder__2" material="fan_holder__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="fan_holder__2" material="fan_holder__2_material"/>
+            <!-- Part metal_rod_1_6 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_1__6" material="metal_rod_1__6_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="metal_rod_1__6" material="metal_rod_1__6_material"/>
+            <!-- Part pico_cover_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="pico_cover__2" material="pico_cover__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="pico_cover__2" material="pico_cover__2_material"/>
+            <!-- Part mainboard_connector_holder_feet_4 -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mainboard_connector_holder_feet__4" material="mainboard_connector_holder_feet__4_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mainboard_connector_holder_feet__4" material="mainboard_connector_holder_feet__4_material"/>
+            <!-- Part mg996r_middle -->
+            <geom type="mesh" class="visual" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mg996r_middle" material="mg996r_middle_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 0 -0.0315" quat="1 -0 0 0" mesh="mg996r_middle" material="mg996r_middle_material"/>
+            <!-- Part buck_module_cover_2 -->
+            <geom type="mesh" class="visual" pos="0.1965 -1.407e-09 -0.0315" quat="1 -0 0 0" mesh="buck_module_cover__2" material="buck_module_cover__2_material"/>
+            <geom type="mesh" class="collision" pos="0.1965 -1.407e-09 -0.0315" quat="1 -0 0 0" mesh="buck_module_cover__2" material="buck_module_cover__2_material"/>
+            <!-- Link component1 -->
+            <body name="component1" pos="0.215846 0.000124007 0.013976" quat="0 0.997738 0.0672292 -0">
+              <!-- Joint from 40x40x10_dc_fan_f3d__v1_2 to component1 -->
+              <joint axis="0 0 1" name="wrist_lift" type="hinge"/>
+              <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+              <!-- Part component1 -->
+              <geom type="mesh" class="visual" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1" material="component1_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1" material="component1_material"/>
+              <!-- Part encoder_holder -->
+              <geom type="mesh" class="visual" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="encoder_holder" material="encoder_holder_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="encoder_holder" material="encoder_holder_material"/>
+              <!-- Part component1_2 -->
+              <geom type="mesh" class="visual" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1__2" material="component1__2_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1__2" material="component1__2_material"/>
+              <!-- Part servo_mg996r_v1_2 -->
+              <geom type="mesh" class="visual" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="servo_mg996r_v1__2" material="servo_mg996r_v1__2_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="servo_mg996r_v1__2" material="servo_mg996r_v1__2_material"/>
+              <!-- Part component1_3 -->
+              <geom type="mesh" class="visual" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1__3" material="component1__3_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1__3" material="component1__3_material"/>
+              <!-- Part transparent_cover -->
+              <geom type="mesh" class="visual" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="transparent_cover" material="transparent_cover_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="transparent_cover" material="transparent_cover_material"/>
+              <!-- Part servo_cover_2 -->
+              <geom type="mesh" class="visual" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="servo_cover__2" material="servo_cover__2_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="servo_cover__2" material="servo_cover__2_material"/>
+              <!-- Part shaft_magnet_holder -->
+              <geom type="mesh" class="visual" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="shaft_magnet_holder" material="shaft_magnet_holder_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="shaft_magnet_holder" material="shaft_magnet_holder_material"/>
+              <!-- Link component1_2 -->
+              <body name="component1_2" pos="0.000124007 -0.026476 -0.0415956" quat="0.577283 -0.577283 0.408343 0.408343">
+                <!-- Joint from component1 to component1_2 -->
+                <joint axis="0 0 1" name="wrist_rotate" type="hinge"/>
+                <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+                <!-- Part component1_4 -->
+                <geom type="mesh" class="visual" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1__3" material="component1__3_material"/>
+                <geom type="mesh" class="collision" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1__3" material="component1__3_material"/>
+                <!-- Part transparent_cover_2 -->
+                <geom type="mesh" class="visual" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="transparent_cover" material="transparent_cover_material"/>
+                <geom type="mesh" class="collision" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="transparent_cover" material="transparent_cover_material"/>
+                <!-- Part component1_5 -->
+                <geom type="mesh" class="visual" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1__2" material="component1__2_material"/>
+                <geom type="mesh" class="collision" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1__2" material="component1__2_material"/>
+                <!-- Part shaft_magnet_holder_2 -->
+                <geom type="mesh" class="visual" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="shaft_magnet_holder" material="shaft_magnet_holder_material"/>
+                <geom type="mesh" class="collision" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="shaft_magnet_holder" material="shaft_magnet_holder_material"/>
+                <!-- Part component1_6 -->
+                <geom type="mesh" class="visual" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1" material="component1_material"/>
+                <geom type="mesh" class="collision" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="component1" material="component1_material"/>
+                <!-- Part encoder_holder_2 -->
+                <geom type="mesh" class="visual" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="encoder_holder" material="encoder_holder_material"/>
+                <geom type="mesh" class="collision" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="encoder_holder" material="encoder_holder_material"/>
+                <!-- Part servo_cover_3 -->
+                <geom type="mesh" class="visual" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="servo_cover__2" material="servo_cover__2_material"/>
+                <geom type="mesh" class="collision" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="servo_cover__2" material="servo_cover__2_material"/>
+                <!-- Part servo_mg996r_v1_3 -->
+                <geom type="mesh" class="visual" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="servo_mg996r_v1__2" material="servo_mg996r_v1__2_material"/>
+                <geom type="mesh" class="collision" pos="-0 -0.02 -0.03125" quat="0.5 0.5 0.5 -0.5" mesh="servo_mg996r_v1__2" material="servo_mg996r_v1__2_material"/>
+                <!-- Link component1_3 -->
+                <body name="component1_3" pos="0.000124007 -0.025476 -0.0415956" quat="0.69604 -0.69604 -0.124611 -0.124611">
+                  <!-- Joint from component1_2 to component1_3 -->
+                  <joint axis="0 0 1" name="end_rotate" type="hinge"/>
+                  <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+                  <!-- Part servo_case_bottom -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="servo_case_bottom" material="servo_case_bottom_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="servo_case_bottom" material="servo_case_bottom_material"/>
+                  <!-- Part transparent_cover_3 -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="transparent_cover__2" material="transparent_cover__2_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="transparent_cover__2" material="transparent_cover__2_material"/>
+                  <!-- Part component2 -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="component2" material="component2_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="component2" material="component2_material"/>
+                  <!-- Part spur_gear_24_teeth -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="spur_gear_24_teeth" material="spur_gear_24_teeth_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="spur_gear_24_teeth" material="spur_gear_24_teeth_material"/>
+                  <!-- Part transparent_cover_4 -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="transparent_cover__3" material="transparent_cover__3_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="transparent_cover__3" material="transparent_cover__3_material"/>
+                  <!-- Part component1_7 -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="component1__4" material="component1__4_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="component1__4" material="component1__4_material"/>
+                  <!-- Part gear_holder -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="gear_holder" material="gear_holder_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="gear_holder" material="gear_holder_material"/>
+                  <!-- Part servo_mg996r_v1_4 -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="servo_mg996r_v1__3" material="servo_mg996r_v1__3_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="servo_mg996r_v1__3" material="servo_mg996r_v1__3_material"/>
+                  <!-- Part spur_gear_24_teeth_2 -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="spur_gear_24_teeth__2" material="spur_gear_24_teeth__2_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="spur_gear_24_teeth__2" material="spur_gear_24_teeth__2_material"/>
+                  <!-- Part servo_case -->
+                  <geom type="mesh" class="visual" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="servo_case" material="servo_case_material"/>
+                  <geom type="mesh" class="collision" pos="-0.02825 -0.00525 -0.0415" quat="0.707107 0.707107 0 -0" mesh="servo_case" material="servo_case_material"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <asset>
+    <mesh file="component1.stl"/>
+    <mesh file="metal_rod_1.stl"/>
+    <mesh file="servo_mg996r_v1__2.stl"/>
+    <mesh file="encoder_arm.stl"/>
+    <mesh file="body_bottom_lid.stl"/>
+    <mesh file="mainboard_connector_holder_top.stl"/>
+    <mesh file="component1__3.stl"/>
+    <mesh file="fan_holder.stl"/>
+    <mesh file="arm_body_encoder_part.stl"/>
+    <mesh file="bottom__2.stl"/>
+    <mesh file="metal_rod.stl"/>
+    <mesh file="transparent_cover__2.stl"/>
+    <mesh file="mainboard_connector_holder_feet__2.stl"/>
+    <mesh file="table_mount_lid.stl"/>
+    <mesh file="main_board_cover.stl"/>
+    <mesh file="arm_body_encoder_part__2.stl"/>
+    <mesh file="bottom_reinforcement.stl"/>
+    <mesh file="encoder_holder.stl"/>
+    <mesh file="40x40x10_dc_fan_f3d__v1__2.stl"/>
+    <mesh file="transparent_bottom_joint_cover__2.stl"/>
+    <mesh file="mainboard_connector_holder_feet.stl"/>
+    <mesh file="main_board_cover__2.stl"/>
+    <mesh file="metal_rod_holder__4.stl"/>
+    <mesh file="table_mount_clamp.stl"/>
+    <mesh file="buck_module_cover.stl"/>
+    <mesh file="servo_cover__2.stl"/>
+    <mesh file="servo_cover.stl"/>
+    <mesh file="dsservo_150kg_80kg_60kg_v1.stl"/>
+    <mesh file="encoder_magnet_holder.stl"/>
+    <mesh file="table_mount.stl"/>
+    <mesh file="body_top_lid_accent.stl"/>
+    <mesh file="metal_rod__4.stl"/>
+    <mesh file="pico_cover__2.stl"/>
+    <mesh file="gear_holder.stl"/>
+    <mesh file="motor_holder.stl"/>
+    <mesh file="mg996r_head.stl"/>
+    <mesh file="body_top_lid__2.stl"/>
+    <mesh file="mg996r_middle.stl"/>
+    <mesh file="transparent_cover__3.stl"/>
+    <mesh file="spur_gear_24_teeth__2.stl"/>
+    <mesh file="40x40x10_dc_fan_f3d__v1_1__2.stl"/>
+    <mesh file="metal_rod_1__3.stl"/>
+    <mesh file="dsservo_150kg_80kg_60kg_v1__3.stl"/>
+    <mesh file="metal_rod__3.stl"/>
+    <mesh file="bearing_reinforcement.stl"/>
+    <mesh file="encoder_magnet_holder__2.stl"/>
+    <mesh file="transparent_cover.stl"/>
+    <mesh file="servo_case_bottom.stl"/>
+    <mesh file="motor_holder_lid.stl"/>
+    <mesh file="bottom_reinforcement__2.stl"/>
+    <mesh file="body_top_lid_accent__2.stl"/>
+    <mesh file="bearing_reinforcement__2.stl"/>
+    <mesh file="ds5180_head__2.stl"/>
+    <mesh file="arm_body__2.stl"/>
+    <mesh file="buck_module_cover__2.stl"/>
+    <mesh file="metal_rod_1__5.stl"/>
+    <mesh file="metal_rod_holder__2.stl"/>
+    <mesh file="metal_rod__2.stl"/>
+    <mesh file="component2.stl"/>
+    <mesh file="lid.stl"/>
+    <mesh file="arm_body.stl"/>
+    <mesh file="mainboard_connector_holder_feet__4.stl"/>
+    <mesh file="mainboard_connector_holder_feet__3.stl"/>
+    <mesh file="servo_mg996r_v1.stl"/>
+    <mesh file="encoder_arm__2.stl"/>
+    <mesh file="40x40x10_dc_fan_f3d__v1.stl"/>
+    <mesh file="body_bottom_lid_accent.stl"/>
+    <mesh file="servo_mg996r_v1__3.stl"/>
+    <mesh file="spur_gear_24_teeth.stl"/>
+    <mesh file="shaft_magnet_holder.stl"/>
+    <mesh file="pico_cover.stl"/>
+    <mesh file="dsservo_150kg_80kg_60kg_v1__2.stl"/>
+    <mesh file="body_bottom_lid__2.stl"/>
+    <mesh file="mainboard_connector_holder_top__2.stl"/>
+    <mesh file="metal_rod_1__2.stl"/>
+    <mesh file="40x40x10_dc_fan_f3d__v1_1.stl"/>
+    <mesh file="component1__2.stl"/>
+    <mesh file="fan_holder__2.stl"/>
+    <mesh file="metal_rod_holder__3.stl"/>
+    <mesh file="metal_rod_1__6.stl"/>
+    <mesh file="servo_case.stl"/>
+    <mesh file="ds5180_head.stl"/>
+    <mesh file="metal_rod__6.stl"/>
+    <mesh file="mainboard_connector_holder_bottom__2.stl"/>
+    <mesh file="metal_rod__5.stl"/>
+    <mesh file="component1__4.stl"/>
+    <mesh file="metal_rod_1__4.stl"/>
+    <mesh file="mainboard_connector_holder_bottom.stl"/>
+    <mesh file="metal_rod_holder.stl"/>
+    <mesh file="transparent_bottom_joint_cover.stl"/>
+    <mesh file="mg996r_top_plate.stl"/>
+    <mesh file="body_top_lid.stl"/>
+    <mesh file="bottom.stl"/>
+    <mesh file="body_bottom_lid_accent__2.stl"/>
+    <material name="table_mount_lid_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="dsservo_150kg_80kg_60kg_v1_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="table_mount_clamp_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="table_mount_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="dsservo_150kg_80kg_60kg_v1__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="motor_holder_lid_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="motor_holder_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="mainboard_connector_holder_feet_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="metal_rod_holder_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="body_top_lid_accent_material" rgba="0.768627 0.207843 0.152941 1"/>
+    <material name="dsservo_150kg_80kg_60kg_v1__3_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="metal_rod_1_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="bottom_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="body_bottom_lid_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="bearing_reinforcement_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="metal_rod_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="40x40x10_dc_fan_f3d__v1_1_material" rgba="0.501961 0.501961 0.501961 1"/>
+    <material name="body_top_lid_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="arm_body_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="lid_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="mainboard_connector_holder_feet__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="metal_rod_holder__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="metal_rod__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="40x40x10_dc_fan_f3d__v1_material" rgba="0.501961 0.501961 0.501961 1"/>
+    <material name="ds5180_head_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="bottom_reinforcement_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="buck_module_cover_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="metal_rod_1__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="arm_body_encoder_part_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="main_board_cover_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="pico_cover_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="transparent_bottom_joint_cover_material" rgba="0.964706 0.964706 0.952941 1"/>
+    <material name="encoder_magnet_holder_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="ds5180_head__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="metal_rod__3_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="metal_rod_1__3_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="body_bottom_lid_accent_material" rgba="0.768627 0.207843 0.152941 1"/>
+    <material name="mainboard_connector_holder_top_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="mainboard_connector_holder_bottom_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="encoder_arm_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="fan_holder_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="bottom_reinforcement__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="metal_rod_1__4_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="body_bottom_lid__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="40x40x10_dc_fan_f3d__v1_1__2_material" rgba="0.501961 0.501961 0.501961 1"/>
+    <material name="metal_rod_holder__3_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="metal_rod_holder__4_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="servo_mg996r_v1_material" rgba="0.0980392 0.0980392 0.0980392 1"/>
+    <material name="encoder_magnet_holder__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="mg996r_top_plate_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="mainboard_connector_holder_bottom__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="mainboard_connector_holder_feet__3_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="arm_body_encoder_part__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="40x40x10_dc_fan_f3d__v1__2_material" rgba="0.501961 0.501961 0.501961 1"/>
+    <material name="main_board_cover__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="metal_rod_1__5_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="metal_rod__4_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="encoder_arm__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="metal_rod__5_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="body_top_lid__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="mainboard_connector_holder_top__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="mg996r_head_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="body_top_lid_accent__2_material" rgba="0.768627 0.207843 0.152941 1"/>
+    <material name="transparent_bottom_joint_cover__2_material" rgba="0.964706 0.964706 0.952941 1"/>
+    <material name="bottom__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="body_bottom_lid_accent__2_material" rgba="0.768627 0.207843 0.152941 1"/>
+    <material name="servo_cover_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="metal_rod__6_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="arm_body__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="bearing_reinforcement__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="fan_holder__2_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="metal_rod_1__6_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="pico_cover__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="mainboard_connector_holder_feet__4_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="mg996r_middle_material" rgba="0.34902 0.34902 0.34902 1"/>
+    <material name="buck_module_cover__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="component1_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="encoder_holder_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="component1__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="servo_mg996r_v1__2_material" rgba="0.0980392 0.0980392 0.0980392 1"/>
+    <material name="component1__3_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="transparent_cover_material" rgba="0.964706 0.964706 0.952941 1"/>
+    <material name="servo_cover__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="shaft_magnet_holder_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="servo_case_bottom_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="transparent_cover__2_material" rgba="0.964706 0.964706 0.952941 1"/>
+    <material name="component2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="spur_gear_24_teeth_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="transparent_cover__3_material" rgba="0.964706 0.964706 0.952941 1"/>
+    <material name="component1__4_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="gear_holder_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="servo_mg996r_v1__3_material" rgba="0.0980392 0.0980392 0.0980392 1"/>
+    <material name="spur_gear_24_teeth__2_material" rgba="0.627451 0.627451 0.627451 1"/>
+    <material name="servo_case_material" rgba="0.627451 0.627451 0.627451 1"/>
+  </asset>
+  <actuator>
+    <position class="F:\revo\urdftest\my-robot" name="base_rot" joint="base_rot"/>
+    <position class="F:\revo\urdftest\my-robot" name="shoulder_lift" joint="shoulder_lift"/>
+    <position class="F:\revo\urdftest\my-robot" name="elbow_lift" joint="elbow_lift" inheritrange="1"/>
+    <position class="F:\revo\urdftest\my-robot" name="wrist_lift" joint="wrist_lift"/>
+    <position class="F:\revo\urdftest\my-robot" name="wrist_rotate" joint="wrist_rotate"/>
+    <position class="F:\revo\urdftest\my-robot" name="end_rotate" joint="end_rotate"/>
+  </actuator>
+  <equality/>
+</mujoco>

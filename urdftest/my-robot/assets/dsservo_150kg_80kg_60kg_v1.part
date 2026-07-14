@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "64282f04fc08a56fd654aee0",
+    "documentMicroversion": "ede5021b451de431418a1cad",
+    "elementId": "0e1efd64e0ad4c2c41e90593",
+    "fullConfiguration": "default",
+    "id": "MBlmgvrwqCTdCSC/v",
+    "isStandardContent": false,
+    "name": "DSSERVO_150kg_80kg_60kg v1 <2>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

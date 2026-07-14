@@ -773,6 +773,12 @@
           "label": "Availability",
           "name": "AVAILABILITY",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DNM",
+          "name": "DNM",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -823,7 +829,7 @@
         "uuid": "bf12628c-52f0-4024-aba9-ddf16a32db20"
       }
     ],
-    "used_designators": "J15,J18,J25-26,J31-36,H1-2,A1,F2,#PWR39,#PWR49-52,#PWR61",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

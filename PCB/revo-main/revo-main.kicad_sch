@@ -8831,6 +8831,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 38.1 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9e977558-88d3-4a3e-bea1-42369ea1aa0e")
 		)
@@ -9009,6 +9020,17 @@
 				(justify bottom)
 			)
 		)
+		(property "SparkFun" ""
+			(at 55.88 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cad37ff2-7335-4679-b256-aeee8b1197a2")
 		)
@@ -9102,6 +9124,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 265.43 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "87fc2b20-a825-4098-9aff-1b177fdda587")
 		)
@@ -9178,6 +9211,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 16.51 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 16.51 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -9346,6 +9390,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 224.79 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7babe648-1a0d-434f-9771-db98ee410d50")
 		)
@@ -9421,6 +9476,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 204.47 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 204.47 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -9602,6 +9668,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 236.22 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b84cae9e-ecbc-4a0f-8c25-0f45f36d9be6")
 		)
@@ -9692,6 +9769,17 @@
 		)
 		(property "PROD_ID" "CONN-11443"
 			(at 265.43 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 265.43 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9859,6 +9947,17 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 31.75 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 31.75 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10107,6 +10206,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 59.69 19.05 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "258f93b3-4d00-4cf2-924d-95fb214b02ba")
 		)
@@ -10190,6 +10300,17 @@
 		)
 		(property "PROD_ID" "CONN-11443"
 			(at 224.79 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 208.28 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10362,6 +10483,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 24.13 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1cdb6974-6bbb-439a-aef1-3f202b374ffc")
 		)
@@ -10435,6 +10567,17 @@
 		)
 		(property "Description" "40V 3A Schottky Diode, SMA"
 			(at 274.32 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 274.32 27.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10594,6 +10737,17 @@
 		)
 		(property "Description" "Fuse"
 			(at 71.12 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 71.12 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10929,6 +11083,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 49.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bd14b31a-9f3e-46e0-8323-d58cc3b114bf")
 		)
@@ -11022,6 +11187,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 190.5 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a58ac89c-b52d-4e2f-9001-7a8f2b644314")
 		)
@@ -11101,6 +11277,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 242.57 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "55da69d0-080d-4999-bb5a-848921578035")
 		)
@@ -11171,6 +11358,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 25.4 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 25.4 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -11328,6 +11526,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 262.89 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 262.89 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -11497,6 +11706,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 44.45 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c5da03c2-f8e7-417c-8e05-192b2af461e7")
 		)
@@ -11644,6 +11864,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 16.51 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 16.51 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11802,6 +12033,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 266.7 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 266.7 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -12046,6 +12288,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 102.87 17.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1ded5889-320b-446a-8076-a7ea643888ea")
 		)
@@ -12126,6 +12379,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 278.13 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f0b3bd71-eedd-4183-aef0-5a0b6a3a2d5d")
 		)
@@ -12196,6 +12460,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 218.44 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 218.44 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -12291,6 +12566,17 @@
 		)
 		(property "MPN" "16ZLH1000MEFC10X16"
 			(at 271.78 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 271.78 101.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12458,6 +12744,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 204.47 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 204.47 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12640,6 +12937,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 208.28 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e8cefb46-54dc-4158-a851-4d74b677f5d9")
 		)
@@ -12712,6 +13020,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 220.98 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 220.98 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "13-MFR50SFTE52-2K2CT-ND"
 			(at 220.98 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -12894,6 +13224,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 236.22 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e6c91fb2-2786-4d3d-8db0-53a59a6beb25")
 		)
@@ -13060,6 +13401,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 259.08 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "650b046d-72c7-4ef4-a10e-78ec1e1fc29a")
 		)
@@ -13202,6 +13554,17 @@
 				(justify bottom)
 			)
 		)
+		(property "SparkFun" ""
+			(at 243.84 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4bde2967-5684-4bc8-89ff-507101b6bd3d")
 		)
@@ -13272,6 +13635,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 220.98 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 220.98 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -13464,6 +13838,17 @@
 				(justify bottom)
 			)
 		)
+		(property "SparkFun" ""
+			(at 43.18 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8cffb5a0-e690-49df-9ea2-5ad5d70666e7")
 		)
@@ -13642,6 +14027,17 @@
 				(justify bottom)
 			)
 		)
+		(property "SparkFun" ""
+			(at 55.88 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5a80d3f0-8e65-4659-9e93-34e9d24f710f")
 		)
@@ -13817,31 +14213,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Package" "None"
-			(at 29.21 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "DNM" ""
-			(at 29.21 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
 			(at 29.21 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13889,7 +14261,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Availability" "In Stock"
+		(property "Check_prices" "https://www.snapeda.com/parts/SS54/MDD/view-part/?ref=eda"
 			(at 29.21 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13901,8 +14273,8 @@
 				(justify bottom)
 			)
 		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SS54/MDD/view-part/?ref=eda"
-			(at 29.21 107.95 0)
+		(property "SparkFun" ""
+			(at 29.21 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13910,7 +14282,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(pin "C"
@@ -13983,6 +14354,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 146.05 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 146.05 17.78 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14163,6 +14545,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 68.58 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7a427914-da3f-4ea4-a8b5-87412b1746df")
 		)
@@ -14307,6 +14700,17 @@
 				(justify bottom)
 			)
 		)
+		(property "SparkFun" ""
+			(at 270.51 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "N"
 			(uuid "61133818-9407-414f-b0ab-8eb12b9a5241")
 		)
@@ -14376,6 +14780,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 30.48 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 30.48 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -14468,6 +14883,17 @@
 			)
 		)
 		(property "MPN" "CRA2512-FZ-R020ELF"
+			(at 92.71 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 92.71 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -14707,6 +15133,17 @@
 			)
 		)
 		(property "Description" "Zero-Drift, Bidirectional Current/Power Monitor (0-26V) With I2C Interface, SOIC-8"
+			(at 63.5 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 63.5 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -14972,6 +15409,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 194.31 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0f31ec37-1461-4ccf-9f9b-191696f6cb4a")
 		)
@@ -15046,6 +15494,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 25.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 25.4 81.28 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15137,6 +15596,17 @@
 			)
 		)
 		(property "MPN" "CRA2512-FZ-R020ELF"
+			(at 135.89 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 135.89 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -15544,6 +16014,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 267.97 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "22fdce6f-c7de-495b-9c87-1d81643b7f8e")
 		)
@@ -15622,6 +16103,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 54.61 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 54.61 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -15715,6 +16207,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 220.98 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 220.98 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -15982,6 +16485,17 @@
 				(justify bottom)
 			)
 		)
+		(property "SparkFun" ""
+			(at 55.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "N"
 			(uuid "c3e189bd-9371-4183-8172-17eee9e985a9")
 		)
@@ -16065,6 +16579,17 @@
 			)
 		)
 		(property "MPN" "25ZLH470MEFC10X12.5"
+			(at 172.72 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 172.72 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -16312,6 +16837,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 170.18 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dded6ae6-fc92-47ac-8802-5cbeaaecb1ec")
 		)
@@ -16395,6 +16931,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 215.9 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ab7bc71a-35e1-40d8-8c31-e32906e643d7")
 		)
@@ -16467,6 +17014,17 @@
 			)
 		)
 		(property "Description" "Zero-Drift, Bidirectional Current/Power Monitor (0-26V) With I2C Interface, SOIC-8"
+			(at 149.86 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 149.86 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -16652,6 +17210,17 @@
 				)
 			)
 		)
+		(property "SparkFun" ""
+			(at 25.4 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "04198ec7-b38a-4ce3-a2da-4bb18af07a92")
 		)
@@ -16799,6 +17368,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 44.45 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
+			(at 44.45 68.58 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16996,6 +17576,17 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "SparkFun" ""
+			(at 259.08 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -17257,6 +17848,17 @@
 				(justify bottom)
 			)
 		)
+		(property "SparkFun" ""
+			(at 55.88 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "57b48f3b-f35f-4e3e-abee-c10a43ab58ff")
 		)
@@ -17407,6 +18009,17 @@
 			)
 		)
 		(property "Description" "Zero-Drift, Bidirectional Current/Power Monitor (0-26V) With I2C Interface, SOIC-8"
+			(at 106.68 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SparkFun" ""
 			(at 106.68 31.75 0)
 			(hide yes)
 			(show_name no)
