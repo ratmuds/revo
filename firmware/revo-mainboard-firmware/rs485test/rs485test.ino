@@ -42,6 +42,7 @@ struct __attribute__((__packed__)) IncomingPacket {
   uint8_t performHome;
   uint8_t rgbColor[3];
   uint16_t maxCurrent;
+  uint8_t jog;         // 0 = normal; !=0 = raw PWM jog (targetAngle is literal 0..180)
   uint8_t checksum;   // XOR of every byte above (incl. magic)
 };
 
@@ -204,6 +205,7 @@ void loop() {
         txData.targetAngle = currentRs485Cmd["a"].as<uint16_t>();
         txData.performHome = currentRs485Cmd["h"].as<uint8_t>();
         txData.maxCurrent  = currentRs485Cmd["c"].as<uint16_t>();
+        txData.jog         = currentRs485Cmd["jog"].as<uint8_t>();
         txData.rgbColor[0] = currentRs485Cmd["rgb"][0].as<uint8_t>();
         txData.rgbColor[1] = currentRs485Cmd["rgb"][1].as<uint8_t>();
         txData.rgbColor[2] = currentRs485Cmd["rgb"][2].as<uint8_t>();
