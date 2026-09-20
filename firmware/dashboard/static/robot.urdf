@@ -1,0 +1,1741 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/64282f04fc08a56fd654aee0/w/7bfaa89faa95d07bc52ebc60/e/3c6d8e351fb6e95213507cba -->
+<robot name="C:\Users\rat-laptop\Documents\revo\urdftest\my-robot">
+  <!-- Link table_mount_lid -->
+  <link name="table_mount_lid">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part table_mount_lid -->
+    <visual>
+      <origin xyz="0.165797 -0.779802 0.471665" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/table_mount_lid.stl"/>
+      </geometry>
+      <material name="table_mount_lid_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.165797 -0.779802 0.471665" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/table_mount_lid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dsservo_150kg_80kg_60kg_v1 -->
+    <visual>
+      <origin xyz="0.165797 -0.779802 0.471665" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/dsservo_150kg_80kg_60kg_v1.stl"/>
+      </geometry>
+      <material name="dsservo_150kg_80kg_60kg_v1_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.165797 -0.779802 0.471665" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/dsservo_150kg_80kg_60kg_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part table_mount_clamp -->
+    <visual>
+      <origin xyz="0.165797 -0.779802 0.471665" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/table_mount_clamp.stl"/>
+      </geometry>
+      <material name="table_mount_clamp_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.165797 -0.779802 0.471665" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/table_mount_clamp.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part table_mount -->
+    <visual>
+      <origin xyz="0.165797 -0.779802 0.471665" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/table_mount.stl"/>
+      </geometry>
+      <material name="table_mount_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.165797 -0.779802 0.471665" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/table_mount.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link dsservo_150kg_80kg_60kg_v1 -->
+  <link name="dsservo_150kg_80kg_60kg_v1">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part dsservo_150kg_80kg_60kg_v1_2 -->
+    <visual>
+      <origin xyz="0.00194544 0.0194454 -0.0205" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/dsservo_150kg_80kg_60kg_v1__2.stl"/>
+      </geometry>
+      <material name="dsservo_150kg_80kg_60kg_v1_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00194544 0.0194454 -0.0205" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/dsservo_150kg_80kg_60kg_v1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_holder_lid -->
+    <visual>
+      <origin xyz="0.00194544 0.0194454 -0.0205" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/motor_holder_lid.stl"/>
+      </geometry>
+      <material name="motor_holder_lid_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00194544 0.0194454 -0.0205" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/motor_holder_lid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_holder -->
+    <visual>
+      <origin xyz="0.00194544 0.0194454 -0.0205" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/motor_holder.stl"/>
+      </geometry>
+      <material name="motor_holder_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00194544 0.0194454 -0.0205" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/motor_holder.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link 40x40x10_dc_fan_f3d__v1 -->
+  <link name="40x40x10_dc_fan_f3d__v1">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part mainboard_connector_holder_feet -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_feet.stl"/>
+      </geometry>
+      <material name="mainboard_connector_holder_feet_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_feet.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_holder -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_holder.stl"/>
+      </geometry>
+      <material name="metal_rod_holder_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_holder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part body_top_lid_accent -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/body_top_lid_accent.stl"/>
+      </geometry>
+      <material name="body_top_lid_accent_material">
+        <color rgba="0.768627 0.207843 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/body_top_lid_accent.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dsservo_150kg_80kg_60kg_v1_3 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/dsservo_150kg_80kg_60kg_v1__3.stl"/>
+      </geometry>
+      <material name="dsservo_150kg_80kg_60kg_v1_3_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/dsservo_150kg_80kg_60kg_v1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_1 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1.stl"/>
+      </geometry>
+      <material name="metal_rod_1_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bottom -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom.stl"/>
+      </geometry>
+      <material name="bottom_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part body_bottom_lid -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/body_bottom_lid.stl"/>
+      </geometry>
+      <material name="body_bottom_lid_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/body_bottom_lid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bearing_reinforcement -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/bearing_reinforcement.stl"/>
+      </geometry>
+      <material name="bearing_reinforcement_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/bearing_reinforcement.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod.stl"/>
+      </geometry>
+      <material name="metal_rod_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 40x40x10_dc_fan_f3d__v1_1 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/40x40x10_dc_fan_f3d__v1_1.stl"/>
+      </geometry>
+      <material name="40x40x10_dc_fan_f3d__v1_1_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/40x40x10_dc_fan_f3d__v1_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part body_top_lid -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/body_top_lid.stl"/>
+      </geometry>
+      <material name="body_top_lid_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/body_top_lid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part arm_body -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_body.stl"/>
+      </geometry>
+      <material name="arm_body_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_body.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part lid -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/lid.stl"/>
+      </geometry>
+      <material name="lid_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/lid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mainboard_connector_holder_feet_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_feet__2.stl"/>
+      </geometry>
+      <material name="mainboard_connector_holder_feet_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_feet__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_holder_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_holder__2.stl"/>
+      </geometry>
+      <material name="metal_rod_holder_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_holder__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__2.stl"/>
+      </geometry>
+      <material name="metal_rod_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 40x40x10_dc_fan_f3d__v1 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/40x40x10_dc_fan_f3d__v1.stl"/>
+      </geometry>
+      <material name="40x40x10_dc_fan_f3d__v1_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/40x40x10_dc_fan_f3d__v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ds5180_head -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/ds5180_head.stl"/>
+      </geometry>
+      <material name="ds5180_head_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/ds5180_head.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bottom_reinforcement -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom_reinforcement.stl"/>
+      </geometry>
+      <material name="bottom_reinforcement_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom_reinforcement.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part buck_module_cover -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/buck_module_cover.stl"/>
+      </geometry>
+      <material name="buck_module_cover_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/buck_module_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_1_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__2.stl"/>
+      </geometry>
+      <material name="metal_rod_1_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part arm_body_encoder_part -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_body_encoder_part.stl"/>
+      </geometry>
+      <material name="arm_body_encoder_part_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_body_encoder_part.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part main_board_cover -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/main_board_cover.stl"/>
+      </geometry>
+      <material name="main_board_cover_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/main_board_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part pico_cover -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/pico_cover.stl"/>
+      </geometry>
+      <material name="pico_cover_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/pico_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part transparent_bottom_joint_cover -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_bottom_joint_cover.stl"/>
+      </geometry>
+      <material name="transparent_bottom_joint_cover_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_bottom_joint_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part encoder_magnet_holder -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_magnet_holder.stl"/>
+      </geometry>
+      <material name="encoder_magnet_holder_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_magnet_holder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ds5180_head_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/ds5180_head__2.stl"/>
+      </geometry>
+      <material name="ds5180_head_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/ds5180_head__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_3 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__3.stl"/>
+      </geometry>
+      <material name="metal_rod_3_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_1_3 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__3.stl"/>
+      </geometry>
+      <material name="metal_rod_1_3_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part body_bottom_lid_accent -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/body_bottom_lid_accent.stl"/>
+      </geometry>
+      <material name="body_bottom_lid_accent_material">
+        <color rgba="0.768627 0.207843 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/body_bottom_lid_accent.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mainboard_connector_holder_top -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_top.stl"/>
+      </geometry>
+      <material name="mainboard_connector_holder_top_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_top.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mainboard_connector_holder_bottom -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_bottom.stl"/>
+      </geometry>
+      <material name="mainboard_connector_holder_bottom_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_bottom.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part encoder_arm -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_arm.stl"/>
+      </geometry>
+      <material name="encoder_arm_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_arm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fan_holder -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/fan_holder.stl"/>
+      </geometry>
+      <material name="fan_holder_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/fan_holder.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link 40x40x10_dc_fan_f3d__v1_2 -->
+  <link name="40x40x10_dc_fan_f3d__v1_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part bottom_reinforcement_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom_reinforcement__2.stl"/>
+      </geometry>
+      <material name="bottom_reinforcement_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom_reinforcement__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_1_4 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__4.stl"/>
+      </geometry>
+      <material name="metal_rod_1_4_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part body_bottom_lid_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/body_bottom_lid__2.stl"/>
+      </geometry>
+      <material name="body_bottom_lid_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/body_bottom_lid__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 40x40x10_dc_fan_f3d__v1_1_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/40x40x10_dc_fan_f3d__v1_1__2.stl"/>
+      </geometry>
+      <material name="40x40x10_dc_fan_f3d__v1_1_2_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/40x40x10_dc_fan_f3d__v1_1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_holder_3 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_holder__3.stl"/>
+      </geometry>
+      <material name="metal_rod_holder_3_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_holder__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_holder_4 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_holder__4.stl"/>
+      </geometry>
+      <material name="metal_rod_holder_4_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_holder__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_mg996r_v1 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_mg996r_v1.stl"/>
+      </geometry>
+      <material name="servo_mg996r_v1_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_mg996r_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part encoder_magnet_holder_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_magnet_holder__2.stl"/>
+      </geometry>
+      <material name="encoder_magnet_holder_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_magnet_holder__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mg996r_top_plate -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mg996r_top_plate.stl"/>
+      </geometry>
+      <material name="mg996r_top_plate_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mg996r_top_plate.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mainboard_connector_holder_bottom_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_bottom__2.stl"/>
+      </geometry>
+      <material name="mainboard_connector_holder_bottom_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_bottom__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mainboard_connector_holder_feet_3 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_feet__3.stl"/>
+      </geometry>
+      <material name="mainboard_connector_holder_feet_3_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_feet__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part arm_body_encoder_part_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_body_encoder_part__2.stl"/>
+      </geometry>
+      <material name="arm_body_encoder_part_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_body_encoder_part__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 40x40x10_dc_fan_f3d__v1_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/40x40x10_dc_fan_f3d__v1__2.stl"/>
+      </geometry>
+      <material name="40x40x10_dc_fan_f3d__v1_2_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/40x40x10_dc_fan_f3d__v1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part main_board_cover_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/main_board_cover__2.stl"/>
+      </geometry>
+      <material name="main_board_cover_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/main_board_cover__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_1_5 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__5.stl"/>
+      </geometry>
+      <material name="metal_rod_1_5_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_4 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__4.stl"/>
+      </geometry>
+      <material name="metal_rod_4_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part encoder_arm_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_arm__2.stl"/>
+      </geometry>
+      <material name="encoder_arm_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_arm__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_5 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__5.stl"/>
+      </geometry>
+      <material name="metal_rod_5_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part body_top_lid_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/body_top_lid__2.stl"/>
+      </geometry>
+      <material name="body_top_lid_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/body_top_lid__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mainboard_connector_holder_top_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_top__2.stl"/>
+      </geometry>
+      <material name="mainboard_connector_holder_top_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_top__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mg996r_head -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mg996r_head.stl"/>
+      </geometry>
+      <material name="mg996r_head_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mg996r_head.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part body_top_lid_accent_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/body_top_lid_accent__2.stl"/>
+      </geometry>
+      <material name="body_top_lid_accent_2_material">
+        <color rgba="0.768627 0.207843 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/body_top_lid_accent__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part transparent_bottom_joint_cover_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_bottom_joint_cover__2.stl"/>
+      </geometry>
+      <material name="transparent_bottom_joint_cover_2_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_bottom_joint_cover__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bottom_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom__2.stl"/>
+      </geometry>
+      <material name="bottom_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part body_bottom_lid_accent_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/body_bottom_lid_accent__2.stl"/>
+      </geometry>
+      <material name="body_bottom_lid_accent_2_material">
+        <color rgba="0.768627 0.207843 0.152941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/body_bottom_lid_accent__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_cover -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_cover.stl"/>
+      </geometry>
+      <material name="servo_cover_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_6 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__6.stl"/>
+      </geometry>
+      <material name="metal_rod_6_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod__6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part arm_body_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_body__2.stl"/>
+      </geometry>
+      <material name="arm_body_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_body__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bearing_reinforcement_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bearing_reinforcement__2.stl"/>
+      </geometry>
+      <material name="bearing_reinforcement_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bearing_reinforcement__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fan_holder_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/fan_holder__2.stl"/>
+      </geometry>
+      <material name="fan_holder_2_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/fan_holder__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part metal_rod_1_6 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__6.stl"/>
+      </geometry>
+      <material name="metal_rod_1_6_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/metal_rod_1__6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part pico_cover_2 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/pico_cover__2.stl"/>
+      </geometry>
+      <material name="pico_cover_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/pico_cover__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mainboard_connector_holder_feet_4 -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_feet__4.stl"/>
+      </geometry>
+      <material name="mainboard_connector_holder_feet_4_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mainboard_connector_holder_feet__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mg996r_middle -->
+    <visual>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mg996r_middle.stl"/>
+      </geometry>
+      <material name="mg996r_middle_material">
+        <color rgba="0.34902 0.34902 0.34902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 0 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/mg996r_middle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part buck_module_cover_2 -->
+    <visual>
+      <origin xyz="0.1965 -1.407e-09 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/buck_module_cover__2.stl"/>
+      </geometry>
+      <material name="buck_module_cover_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1965 -1.407e-09 -0.0315" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://assets/buck_module_cover__2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link component1 -->
+  <link name="component1">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part component1 -->
+    <visual>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1.stl"/>
+      </geometry>
+      <material name="component1_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part encoder_holder -->
+    <visual>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_holder.stl"/>
+      </geometry>
+      <material name="encoder_holder_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_holder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component1_2 -->
+    <visual>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__2.stl"/>
+      </geometry>
+      <material name="component1_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_mg996r_v1_2 -->
+    <visual>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_mg996r_v1__2.stl"/>
+      </geometry>
+      <material name="servo_mg996r_v1_2_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_mg996r_v1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component1_3 -->
+    <visual>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__3.stl"/>
+      </geometry>
+      <material name="component1_3_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part transparent_cover -->
+    <visual>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_cover.stl"/>
+      </geometry>
+      <material name="transparent_cover_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_cover_2 -->
+    <visual>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_cover__2.stl"/>
+      </geometry>
+      <material name="servo_cover_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_cover__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_magnet_holder -->
+    <visual>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shaft_magnet_holder.stl"/>
+      </geometry>
+      <material name="shaft_magnet_holder_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shaft_magnet_holder.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link component1_2 -->
+  <link name="component1_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part component1_4 -->
+    <visual>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__3.stl"/>
+      </geometry>
+      <material name="component1_4_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part transparent_cover_2 -->
+    <visual>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_cover.stl"/>
+      </geometry>
+      <material name="transparent_cover_2_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component1_5 -->
+    <visual>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__2.stl"/>
+      </geometry>
+      <material name="component1_5_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_magnet_holder_2 -->
+    <visual>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shaft_magnet_holder.stl"/>
+      </geometry>
+      <material name="shaft_magnet_holder_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shaft_magnet_holder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component1_6 -->
+    <visual>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1.stl"/>
+      </geometry>
+      <material name="component1_6_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/component1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part encoder_holder_2 -->
+    <visual>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_holder.stl"/>
+      </geometry>
+      <material name="encoder_holder_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/encoder_holder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_cover_3 -->
+    <visual>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_cover__2.stl"/>
+      </geometry>
+      <material name="servo_cover_3_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_cover__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_mg996r_v1_3 -->
+    <visual>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_mg996r_v1__2.stl"/>
+      </geometry>
+      <material name="servo_mg996r_v1_3_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.02 -0.03125" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_mg996r_v1__2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link component1_3 -->
+  <link name="component1_3">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part servo_case_bottom -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_case_bottom.stl"/>
+      </geometry>
+      <material name="servo_case_bottom_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_case_bottom.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part transparent_cover_3 -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_cover__2.stl"/>
+      </geometry>
+      <material name="transparent_cover_3_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_cover__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component2 -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/component2.stl"/>
+      </geometry>
+      <material name="component2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/component2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spur_gear_24_teeth -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/spur_gear_24_teeth.stl"/>
+      </geometry>
+      <material name="spur_gear_24_teeth_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/spur_gear_24_teeth.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part transparent_cover_4 -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_cover__3.stl"/>
+      </geometry>
+      <material name="transparent_cover_4_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/transparent_cover__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component1_7 -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__4.stl"/>
+      </geometry>
+      <material name="component1_7_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/component1__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear_holder -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/gear_holder.stl"/>
+      </geometry>
+      <material name="gear_holder_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/gear_holder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_mg996r_v1_4 -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_mg996r_v1__3.stl"/>
+      </geometry>
+      <material name="servo_mg996r_v1_4_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_mg996r_v1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spur_gear_24_teeth_2 -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/spur_gear_24_teeth__2.stl"/>
+      </geometry>
+      <material name="spur_gear_24_teeth_2_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/spur_gear_24_teeth__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_case -->
+    <visual>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_case.stl"/>
+      </geometry>
+      <material name="servo_case_material">
+        <color rgba="0.627451 0.627451 0.627451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02825 -0.00525 -0.0415" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_case.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from component1_2 to component1_3 -->
+  <joint name="end_rotate" type="revolute">
+    <origin xyz="0.000124007 -0.025476 -0.0415956" rpy="-1.5708 -0.354302 -0"/>
+    <parent link="component1_2"/>
+    <child link="component1_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from component1 to component1_2 -->
+  <joint name="wrist_rotate" type="revolute">
+    <origin xyz="0.000124007 -0.026476 -0.0415956" rpy="-1.5708 1.23129 -0"/>
+    <parent link="component1"/>
+    <child link="component1_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from 40x40x10_dc_fan_f3d__v1_2 to component1 -->
+  <joint name="wrist_lift" type="revolute">
+    <origin xyz="0.215846 0.000124007 0.013976" rpy="3.14159 0 0.13456"/>
+    <parent link="40x40x10_dc_fan_f3d__v1_2"/>
+    <child link="component1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from 40x40x10_dc_fan_f3d__v1 to 40x40x10_dc_fan_f3d__v1_2 -->
+  <joint name="elbow_lift" type="revolute">
+    <origin xyz="0.216 2.7539e-05 0.0254306" rpy="3.14159 -0 -0"/>
+    <parent link="40x40x10_dc_fan_f3d__v1"/>
+    <child link="40x40x10_dc_fan_f3d__v1_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.872665" upper="2.61799"/>
+  </joint>
+  <!-- Joint from dsservo_150kg_80kg_60kg_v1 to 40x40x10_dc_fan_f3d__v1 -->
+  <joint name="shoulder_lift" type="revolute">
+    <origin xyz="0.0214454 -0.0382546 -0.0205" rpy="-1.5708 0.771565 -0"/>
+    <parent link="dsservo_150kg_80kg_60kg_v1"/>
+    <child link="40x40x10_dc_fan_f3d__v1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from table_mount_lid to dsservo_150kg_80kg_60kg_v1 -->
+  <joint name="base_rot" type="revolute">
+    <origin xyz="0.163647 -0.755532 0.462096" rpy="-3.14159 0 0.0241335"/>
+    <parent link="table_mount_lid"/>
+    <child link="dsservo_150kg_80kg_60kg_v1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>

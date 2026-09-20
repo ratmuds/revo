@@ -1,4 +1,37 @@
 PCB,Type,Reference,Value,Quantity,Footprint,Part Number,DNP,Datasheet
+Hardware / Off-the-Shelf,Servo Motor,,80KG High Torque Digital Servo (270°),3,,80KG 270°,,"1/5 scale waterproof metal gear servos for base, shoulder, and elbow joints"
+Hardware / Off-the-Shelf,Servo Motor,,MG996R Metal Gear Digital Servo,4,,MG996R,,4.8V–6.0V high torque standard servos for wrist and gripper joints
+Hardware / Off-the-Shelf,Hardware,,18T Round Disc Metal Servo Horn,2,,18T Disc,,Round disc steering servo horn for 60KG/80KG/150KG servos
+Hardware / Off-the-Shelf,Hardware,,MG996R Metal Servo Horns (25T),4,,25T Horn,,Metal steering servo horns for MG996R servos
+Hardware / Off-the-Shelf,Bearing,,6806-2RS Deep Groove Ball Bearings,2,,6806-2RS,,30mm ID x 42mm OD x 7mm bore double sealed chrome steel bearings for joints
+Hardware / Off-the-Shelf,Magnet,,Radial Magnet for AS5600,4,,Radial Magnet,,Diametrically / radially magnetized disc magnets for AS5600 magnetic encoders
+Hardware / Off-the-Shelf,Magnet,,6x2mm Neodymium Disc Magnets (N35),1 pack,,N35 6x2mm,,Permanent NdFeB round magnets for latching/accessories
+Hardware / Off-the-Shelf,Fastener,,M2.5 Heat-Set Brass Threaded Inserts,100 pcs,,M2.5*3*4,,M2.5 x 3mm x 4mm knurled embed nuts for 3D printed components
+Hardware / Off-the-Shelf,Fastener,,M2.5 Screw Assortment,1 pack,,M2.5 Assorted,,Assorted lengths for robot arm structure and PCB mounting
+Hardware / Off-the-Shelf,Fastener,,M3 Low-Profile Socket Head Screws,1 pack,,M3 Hex Cap,,304 stainless steel Allen hex thin/short head cap bolts
+Hardware / Off-the-Shelf,Power Supply,,180W Dell Power Supply AC Adapter,1,,Dell 180W,,19.5V 180W power brick for main system power
+Hardware / Off-the-Shelf,Adapter,,Dell 7.4x5.0mm to XT60 Adapter (XT-017),1,,XT-017,,Converts Dell power brick 7.4x5.0mm barrel jack to XT60 plug
+Hardware / Off-the-Shelf,Buck Converter Module,,10A Step-Down Buck Converter Module,2,,10A Buck,,4-32V to 1.2-32V adjustable CV/CC step-down regulator for servo/system power
+Hardware / Off-the-Shelf,Buck Converter Module,,MP1584EN 3A Buck Converter Module,2,,MP1584EN,,Ultra-compact 3A adjustable DC-DC step-down power module (Mini360 style)
+Hardware / Off-the-Shelf,Switch,,Red Mushroom Emergency Stop Switch,1,,E-STOP DPST,,"1NO 1NC DPST latching push-button E-STOP switch (660V 10A, plugs into J17)"
+Hardware / Off-the-Shelf,Camera,,Aptina AR0144 720P 60fps Global Shutter Camera,1,,AR0144,,High-speed 170° fisheye USB camera module for tracking and vision
+Hardware / Off-the-Shelf,Camera,,OV9726 1MP USB Camera Module,4,,OV9726,,720P CMOS 50° FOV USB cameras (used in camera_server.py)
+Hardware / Off-the-Shelf,Fan,,3010 Cooling Fan (12V),1,,3010 12V,,30x30x10mm 2-pin 12V DC cooling fan (connects to FAN PWR J24/J23)
+Hardware / Off-the-Shelf,RGB LED Module,,WS2812B RGB LED Ring (12-Bit),2,,WS2812B 12-bit,,5050 RGB LED ring with integrated WS2812 drivers (12 LEDs each)
+Hardware / Off-the-Shelf,Wiring,,18AWG Tinned Copper Wire (5m),5m,,18AWG 5M,,Flexible PVC tinned copper high-current power delivery cable
+Hardware / Off-the-Shelf,Wiring / Cable,,XT60 Male to Female Extension Cable,1,,14AWG XT60 10CM,,14AWG silicone wire extension cable (10cm)
+Hardware / Off-the-Shelf,Wiring / Connector,,JST 1.25mm 4-Pin Pre-Crimped Cables,10 pairs,,JST 1.25mm 4P,,Micro 4-pin male/female plugs with 100mm 26AWG wire for RS485 daisy chain
+Hardware / Off-the-Shelf,Wiring,,Assorted Hookup Wires,1 set,,Assorted Wires,,General length jumper and hookup wires
+Hardware / Off-the-Shelf,Connector,,XT60E-M Screw-Mount Male Plug,1,,XT60E-M,,Gold-plated panel/chassis mount XT60 connector (matches mainboard J21)
+Hardware / Off-the-Shelf,Connector,,2.54mm Pin Headers Kit,30 pcs,,2.54mm Headers,,Straight & right-angle male and female 2.54mm headers for PCBs
+Hardware / Off-the-Shelf,Connector Kit,,JST 1.25mm Horizontal Connector Kit,1 box,,JST 1.25mm Box,,"Horizontal sockets, plugs, and crimp pins for servo data bus"
+Hardware / Off-the-Shelf,Connector Kit,,VH 3.96mm Connector Kit,1 box,,VH 3.96mm Box,,VH 3.96mm housings and terminals for high-current power connectors (B2PS-VH)
+Hardware / Off-the-Shelf,Connector Kit,,PH 2.0mm Connector Kit,2 boxes,,PH 2.0mm Box,,PH 2.0mm housings and crimp terminals for LiPo / sensor wiring
+Hardware / Off-the-Shelf,Tool,,Terminal Crimping Pliers (SN-2549),1,,SN-2549,,"Crimping tool for JST 1.25mm, PH 2.0mm, VH 3.96mm, SM 2.54mm terminals"
+Hardware / Off-the-Shelf,MCU Module,,Raspberry Pi Pico,1,,RPi Pico,,RP2040 microcontroller board for revo mainboard (A1)
+Hardware / Off-the-Shelf,Current Monitor IC,,INA219AIDR Current Sensor IC,6,,INA219AIDR,,SOIC-8 I2C bidirectional current/power monitor ICs (spares/on-board)
+Hardware / Off-the-Shelf,Voltage Regulator,,HT7333 / HT7350 LDO Regulators,10-pack,,HT7333 / HT7350,,SOT-89 250mA low-dropout regulators (both 3.3V and 5.0V)
+Hardware / Off-the-Shelf,Thermistor,,NTC Thermistor 10k (MF52AT),4 (plus 20pc pack),,MF52AT 10k,,"B=3950, 10kΩ @ 25°C thermal sensors for servo motor monitoring"
 revo-main,Capacitor,C2,470uF,1,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,35ZLH470MEFCT810X16,,
 revo-main,Capacitor,"C3, C4, C6",470uF,3,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,25ZLH470MEFC10X12.5,,
 revo-main,Capacitor,"C7, C8, C9",0.1uF,3,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,,

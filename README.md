@@ -2,7 +2,49 @@
 
 a cool robot arm
 
-## Bill of Materials
+## Bill of Materials (this is so so so long)
+
+### Hardware & Components
+
+Please don't actually build this project, but if you do ORDER SPARES!!!!!!
+
+| Name | Type | Amount | Notes |
+| --- | --- | --- | --- |
+| 80KG High Torque Digital Servo (270°) | Servo Motor | 3 | 1/5 scale waterproof metal gear servos for base, shoulder, and elbow joints |
+| MG996R Metal Gear Digital Servo | Servo Motor | 4 | 4.8V–6.0V high torque standard servos for wrist and gripper joints |
+| 18T Round Disc Metal Servo Horn | Hardware | 2 | Round disc steering servo horn for 60KG/80KG/150KG servos |
+| MG996R Metal Servo Horns (25T) | Hardware | 4 | Metal steering servo horns for MG996R servos |
+| 6806-2RS Deep Groove Ball Bearings | Bearing | 2 | 30mm ID x 42mm OD x 7mm bore double sealed chrome steel bearings for joints |
+| Radial Magnet for AS5600 | Magnet | 4 | Diametrically / radially magnetized disc magnets for AS5600 magnetic encoders |
+| 6x2mm Neodymium Disc Magnets (N35) | Magnet | 1 pack | Permanent NdFeB round magnets for latching/accessories |
+| M2.5 Heat-Set Brass Threaded Inserts | Fastener | 100 pcs | M2.5 x 3mm x 4mm knurled embed nuts for 3D printed components |
+| M2.5 Screw Assortment | Fastener | 1 pack | Assorted lengths for robot arm structure and PCB mounting |
+| M3 Low-Profile Socket Head Screws | Fastener | 1 pack | 304 stainless steel Allen hex thin/short head cap bolts |
+| 180W Dell Power Supply AC Adapter | Power Supply | 1 | 19.5V 180W power brick for main system power |
+| Dell 7.4x5.0mm to XT60 Adapter (XT-017) | Adapter | 1 | Converts Dell power brick 7.4x5.0mm barrel jack to XT60 plug |
+| 10A Step-Down Buck Converter Module | Buck Converter Module | 2 | 4-32V to 1.2-32V adjustable CV/CC step-down regulator for servo/system power |
+| MP1584EN 3A Buck Converter Module | Buck Converter Module | 2 | Ultra-compact 3A adjustable DC-DC step-down power module (Mini360 style) |
+| Red Mushroom Emergency Stop Switch | Switch | 1 | 1NO 1NC DPST latching push-button E-STOP switch (660V 10A, plugs into J17) |
+| Aptina AR0144 720P 60fps Global Shutter Camera | Camera | 1 | High-speed 170° fisheye USB camera module for tracking and vision |
+| OV9726 1MP USB Camera Module | Camera | 4 | 720P CMOS 50° FOV USB cameras (used in camera_server.py) |
+| 3010 Cooling Fan (12V) | Fan | 1 | 30x30x10mm 2-pin 12V DC cooling fan (connects to FAN PWR J24/J23) |
+| WS2812B RGB LED Ring (12-Bit) | RGB LED Module | 2 | 5050 RGB LED ring with integrated WS2812 drivers (12 LEDs each) |
+| 18AWG Tinned Copper Wire (5m) | Wiring | 5m | Flexible PVC tinned copper high-current power delivery cable |
+| XT60 Male to Female Extension Cable | Wiring / Cable | 1 | 14AWG silicone wire extension cable (10cm) |
+| JST 1.25mm 4-Pin Pre-Crimped Cables | Wiring / Connector | 10 pairs | Micro 4-pin male/female plugs with 100mm 26AWG wire for RS485 daisy chain |
+| Assorted Hookup Wires | Wiring | 1 set | General length jumper and hookup wires |
+| XT60E-M Screw-Mount Male Plug | Connector | 1 | Gold-plated panel/chassis mount XT60 connector (matches mainboard J21) |
+| 2.54mm Pin Headers Kit | Connector | 30 pcs | Straight & right-angle male and female 2.54mm headers for PCBs |
+| JST 1.25mm Horizontal Connector Kit | Connector Kit | 1 box | Horizontal sockets, plugs, and crimp pins for servo data bus |
+| VH 3.96mm Connector Kit | Connector Kit | 1 box | VH 3.96mm housings and terminals for high-current power connectors (B2PS-VH) |
+| PH 2.0mm Connector Kit | Connector Kit | 2 boxes | PH 2.0mm housings and crimp terminals for LiPo / sensor wiring |
+| Terminal Crimping Pliers (SN-2549) | Tool | 1 | Crimping tool for JST 1.25mm, PH 2.0mm, VH 3.96mm, SM 2.54mm terminals |
+| Raspberry Pi Pico | MCU Module | 1 | RP2040 microcontroller board for revo mainboard (A1) |
+| INA219AIDR Current Sensor IC | Current Monitor IC | 6 | SOIC-8 I2C bidirectional current/power monitor ICs (spares/on-board) |
+| HT7333 / HT7350 LDO Regulators | Voltage Regulator | 10-pack | SOT-89 250mA low-dropout regulators (both 3.3V and 5.0V) |
+| NTC Thermistor 10k (MF52AT) | Thermistor | 4 (plus 20pc pack) | B=3950, 10kΩ @ 25°C thermal sensors for servo motor monitoring |
+
+### PCB Components (SMD / THT)
 
 | Name | Type | Amount | Notes |
 | --- | --- | --- | --- |
