@@ -1,3 +1,76 @@
 # revo
 
 a cool robot arm
+
+## Bill of Materials
+
+| Name | Type | Amount | Notes |
+| --- | --- | --- | --- |
+| 0.1uF | Capacitor | 12 | `C_0805_2012Metric_Pad1.18x1.45mm_HandSolder`; revo-main: C7, C8, C9; revo-main-bottom: C5; revo-servo: C1, C3, C5, C7; revo-servo-hat: C7, C8, C9; revo-joint-encoder: C7 |
+| 1000uF | Capacitor | 1 | `CP_Radial_D10.0mm_P5.00mm`; MPN: 16ZLH1000MEFC10X16; revo-main: C11 |
+| 100uF | Capacitor | 1 | `CP_Elec_6.3x5.4`; revo-servo: C4 |
+| 100uF | Capacitor | 1 | `CP_Radial_D6.3mm_P2.50mm`; MPN: 732-8707-1-ND; revo-main-bottom: C10 |
+| 10uF | Capacitor | 4 | `C_0805_2012Metric_Pad1.18x1.45mm_HandSolder`; revo-main: C12, C13; revo-servo: C8, C9 |
+| 470uF | Capacitor | 1 | `CP_Radial_D10.0mm_P5.00mm`; MPN: 35ZLH470MEFCT810X16; revo-main: C2 |
+| 470uF | Capacitor | 3 | `CP_Radial_D10.0mm_P5.00mm`; MPN: 25ZLH470MEFC10X12.5; revo-main: C3, C4, C6 |
+| 0.02R 2W | Resistor | 3 | `R_2512_6332Metric_Pad1.40x3.35mm_HandSolder`; MPN: CRA2512-FZ-R020ELF; revo-main: R1, R2, R3 |
+| 0.1R 2W | Resistor | 1 | `R_2512_6332Metric_Pad1.40x3.35mm_HandSolder`; revo-servo: R1 |
+| 1.5k | Resistor | 1 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; revo-main-bottom: R11 |
+| 100R | Resistor | 1 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; revo-main: R22 |
+| 10k | Resistor | 7 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; revo-main: R5, R6, R7, R23; revo-main-bottom: R10; revo-servo: R16, R19 |
+| 120R | Resistor | 1 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; revo-main-bottom: R4 |
+| 120R | Resistor | 1 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; *(DNP / Do Not Populate)*; revo-servo: R4 |
+| 2.2K | Resistor | 1 | `R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal`; MPN: 13-MFR50SFTE52-2K2CT-ND; revo-main: R21 |
+| 20k | Resistor | 1 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; revo-servo: R18 |
+| 220R | Resistor | 4 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; revo-servo: R14, R20; revo-servo-hat: R14; revo-joint-encoder: R16 |
+| 330R | Resistor | 4 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; revo-main: R20; revo-servo: R13; revo-servo-hat: R13; revo-joint-encoder: R15 |
+| 4.7k | Resistor | 5 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; revo-main-bottom: R8, R9; revo-servo: R11, R12, R15 |
+| 4.7k | Resistor | 2 | `R_0805_2012Metric_Pad1.20x1.40mm_HandSolder`; *(DNP / Do Not Populate)*; revo-joint-encoder: R13, R14 |
+| NTC 10k | Thermistor | 1 | `R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal`; revo-servo: R17 |
+| SS34 | Diode | 2 | `D_SMA`; revo-main: D1; revo-servo: D1 |
+| SS54 | Diode | 1 | `DO-214AC`; MPN: SS54; revo-main: D2 |
+| LED | LED | 7 | `D_0805_2012Metric_Pad1.15x1.40mm_HandSolder`; revo-main: D5, D6; revo-servo: D3, D4, D5; revo-servo-hat: D4; revo-joint-encoder: D4 |
+| WS2812B_5050 | RGB LED | 1 | `LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm`; revo-servo-hat: D1 |
+| 2N7002 | MOSFET | 1 | `SOT-23`; revo-main: Q2 |
+| AOD4185 | MOSFET | 1 | `TO-252-2`; revo-main: Q3 |
+| BSS138 | MOSFET | 1 | `SOT-23`; revo-main: Q4 |
+| ATtiny3216-S | MCU | 1 | `SOIC-20W_7.5x12.8mm_P1.27mm`; revo-servo: U1 |
+| RaspberryPi_Pico | MCU Module | 1 | `RaspberryPi_Pico_Common_Unspecified`; revo-main-bottom: A1 |
+| AS5600 | Magnetic Encoder | 2 | `SOIC8`; revo-servo-hat: U1; revo-joint-encoder: U1 |
+| DRV5032ZEDBZR | Hall Sensor | 1 | `SOT95P237X112-3N`; revo-servo-hat: U2 |
+| INA219AxD | Current Monitor IC | 4 | `SOIC-8_3.9x4.9mm_P1.27mm`; revo-main: U6, U9, U10; revo-servo: U3 |
+| THVD1420D | RS-485 Transceiver | 2 | `SOIC-8_3.9x4.9mm_P1.27mm`; revo-main-bottom: U7; revo-servo: U2 |
+| HT7333 | Voltage Regulator | 1 | `IC_HT7333`; revo-servo: U6 |
+| HT7350 | Voltage Regulator | 1 | `IC_HT7333`; revo-main: U1 |
+| Mini360 | Buck Converter Module | 2 | `Mini360_step-down`; revo-main-bottom: U2, U3 |
+| 3V3 | Connector | 2 | `PinHeader_1x02_P2.54mm_Vertical`; revo-main: J28; revo-main-bottom: J27 |
+| BUZZER | Connector | 2 | `PinHeader_1x01_P2.54mm_Vertical`; revo-main: J15; revo-main-bottom: J18 |
+| Conn | Connector | 4 | `PinHeader_1x01_P2.54mm_Vertical`; revo-main: J34, J35; revo-main-bottom: J32, J36 |
+| Conn | Connector | 2 | `PinHeader_1x03_P2.54mm_Vertical`; revo-main: J26; revo-main-bottom: J25 |
+| Data In | Connector | 2 | `JST_1x04_P1.25mm_Locking_Horizontal_SMD`; revo-main-bottom: J2; revo-servo: J2 |
+| Data Out | Connector | 1 | `JST_1x04_P1.25mm_Locking_Horizontal_SMD`; revo-servo: J3 |
+| DS5180 | Connector | 3 | `PinHeader_1x03_P2.54mm_Vertical`; revo-main: J8, J9, J10 |
+| E-STOP | Connector | 1 | `PinHeader_1x02_P2.54mm_Vertical`; revo-main: J17 |
+| FAN PWR | Connector | 2 | `PinHeader_1x02_P2.54mm_Vertical`; revo-main: J24; revo-main-bottom: J23 |
+| I2C | Connector | 2 | `PinHeader_1x02_P2.54mm_Vertical`; revo-main: J29; revo-main-bottom: J30 |
+| JST_2mm_LiPo | Connector | 5 | `JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical`; revo-main: J4, J5, J6, J7, J20 |
+| KF301-2P | Connector | 3 | `HANDSON_KF301-2P`; revo-main: J14, J16, J19 |
+| KF301-2P | Connector | 1 | `KF7.62_2P`; revo-main: J13 |
+| LED | Connector | 1 | `PinSocket_1x03_P2.54mm_Vertical`; revo-joint-encoder: J3 |
+| Main Connector | Connector | 1 | `JST_1x04_P2.0mm_Horizontal_PTH`; revo-joint-encoder: J1 |
+| Main Connector | Connector | 2 | `JST_1x04_P2.0mm_Vertical_PTH`; revo-main-bottom: J1, J3 |
+| Motor | Connector | 1 | `PinSocket_1x03_P2.54mm_Vertical`; revo-servo: J4 |
+| Power | Connector | 2 | `B2PS-VH`; revo-main: X1; revo-servo: X1 |
+| Power Out | Connector | 1 | `B2PS-VH`; revo-servo: X2 |
+| Programming | Connector | 2 | `PinSocket_1x03_P2.54mm_Vertical`; revo-servo: J1; revo-joint-encoder: J2 |
+| RPi 5 SPI | Connector | 1 | `PinHeader_1x05_P2.54mm_Vertical`; revo-main-bottom: J11 |
+| Sensor Board Connector | Connector | 2 | `PinHeader_1x06_P2.54mm_Horizontal`; revo-servo: J6; revo-servo-hat: J1 |
+| SERVO CONN | Connector | 2 | `PinHeader_1x03_P2.54mm_Vertical`; revo-main: J12; revo-main-bottom: J22 |
+| XT60-M | Connector | 1 | `AMASS_XT60-M`; revo-main: J21 |
+| Home | Switch | 2 | `SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS`; revo-main: SW1; revo-servo: SW1 |
+| Step | Switch | 1 | `SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS`; revo-servo: SW2 |
+| 10A | Fuse | 1 | `Fuse_1808`; revo-main: F2 |
+| 25A | Fuse | 1 | `Fuse_1808`; revo-main: F1 |
+| CEM-1206S | Buzzer | 1 | `CUI_CEM-1206S`; revo-main: LS1 |
+| 1.0mm | Test Point | 10 | `TestPoint-1.0mm`; revo-servo: TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8, TP9, TP10 |
+| Jumper_2_Open | Jumper | 3 | `SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm`; revo-servo: JP1, JP2, JP3 |
