@@ -8,6 +8,8 @@
 
 a cool robot arm
 
+[![Watch the video](https://www.youtube.com/watch?v=T2Xa6mJVtoo)](https://www.youtube.com/watch?v=T2Xa6mJVtoo)
+
 ## Some images
 
 # MORE IMAGES IN `/PCB`!!!!!!!!
