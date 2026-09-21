@@ -11,7 +11,7 @@ a cool robot arm
 <img width="1487" height="782" alt="image" src="https://github.com/user-attachments/assets/d1c303de-a520-447c-8deb-7a144a126fa4" />
 
 
-# [![Watch the video](https://www.youtube.com/watch?v=T2Xa6mJVtoo)](https://www.youtube.com/watch?v=T2Xa6mJVtoo)
+[![Watch the demo video](https://img.youtube.com/vi/T2Xa6mJVtoo/hqdefault.jpg)](https://www.youtube.com/watch?v=T2Xa6mJVtoo)
 
 # What is it?
 
@@ -21,13 +21,13 @@ revo is a robot arm I made that is 6 DoF, and is equipped with 12 PCBs (5 unique
 
 # Why?
 
-I wanted to make a robot arm that punched above it's weight. The price is pretty similar to smaller robot arms on Amazon that may not include cameras, which would need to be purchased seperately. The way this is achieved by using cheap servos, servos that are 100% NOT made for this purpose, and adding most of the functionality of a smart servo back by using a TON of PCBs. It was a lot of soldering. I just wanted to make something that had more features for less money :)
+I wanted to make a robot arm that punched above its weight. The price is pretty similar to smaller robot arms on Amazon that may not include cameras, which would need to be purchased separately. The way this is achieved is by using cheap servos, servos that are 100% NOT made for this purpose, and adding most of the functionality of a smart servo back by using a TON of PCBs. It was a lot of soldering. I just wanted to make something that had more features for less money :)
 
 <img width="400" height="225" alt="20260702_180830" src="https://github.com/user-attachments/assets/9b1d1fba-f3f2-43e5-b712-aca054bbc806" />
 
 ### Motors
 
-Each motor has voltage, current, and a connector for a NTC thermistor for temperature monitoring. The MG996R servos each have a sensor PCB that plugs in and provides angle data via a AS5600 IC and another IC for a magnetic endstop since I had issues with physical endstops before. The MG996R needs a custom case to mount everything, which took me an incredible amount of time to get working due to super weird tolerances, especially the way I have it working requiring a seperate 3D printed extension for the shaft to mount a magnet. The code also has to track this magnet super fast and track how many full revolutions it makes, and calculates the correct real angle from that. It's also running LADRC instead of basic sweep or PID, which has helped a little with jittering and general inaccuracies.
+Each motor has voltage, current, and a connector for a NTC thermistor for temperature monitoring. The MG996R servos each have a sensor PCB that plugs in and provides angle data via an AS5600 IC and another IC for a magnetic endstop since I had issues with physical endstops before. The MG996R needs a custom case to mount everything, which took me an incredible amount of time to get working due to super weird tolerances, especially the way I have it working requiring a separate 3D printed extension for the shaft to mount a magnet. The code also has to track this magnet super fast and track how many full revolutions it makes, and calculates the correct real angle from that. It's also running LADRC instead of basic sweep or PID, which has helped a little with jittering and general inaccuracies.
 
 Each MG996R servo has two JST-VH connectors and two JST-1.25mm connectors. They daisy chain 6V and a RS-485 bus for reliable data transfer. The daisy chaining helps with the wiring, and the differential signals help with noise resistance and the distance. Each servo compares a checksum and magic byte that is received to verify data integrity before loading it into structs and using the data. They have multiple LEDs to provide information such as errors, calibration status, data corruption, invalid PCB ID, code alive status, etc.
 
@@ -35,7 +35,7 @@ Each MG996R servo has two JST-VH connectors and two JST-1.25mm connectors. They 
 
 ### Mainboard
 
-The mainboard has a RPi Pico for controlling, and a bunch of sensors for the DS5180 servo motors. The mainboard also has a two step power circuit that requires a logic signal from the Pico and the E-STOP to be depressed to allow the electricity to flow through. This is then routed to 3 seperate buck modules that regulate the voltage. There is a 6V module for the MG996Rs, and two 7.4V modules for the DS5180s. There also is two smaller modules for 12V and 3.3V.
+The mainboard has a RPi Pico for controlling, and a bunch of sensors for the DS5180 servo motors. The mainboard also has a two step power circuit that requires a logic signal from the Pico and the E-STOP to be depressed to allow the electricity to flow through. This is then routed to 3 separate buck modules that regulate the voltage. There is a 6V module for the MG996Rs, and two 7.4V modules for the DS5180s. There are also two smaller modules for 12V and 3.3V.
 
 <img width="400" height="222" alt="20260705_112805" src="https://github.com/user-attachments/assets/fbf79def-7233-41fd-b6b3-e325a6a809f9" />
 
@@ -47,15 +47,12 @@ There are multiple ways to control the robot arm, such as manually controlling t
 
 ## Some images
 
-# MORE IMAGES IN `/PCB`!!!!!!!!
+### More images in the [`/PCB`](PCB/) folder!
 
 <img width="671" height="224" alt="Screenshot 2026-09-20 174516" src="https://github.com/user-attachments/assets/c969aab0-12bd-467e-b1e3-4f70ca88bbfd" />
 <img width="550" height="430" alt="Screenshot 2026-09-20 174107" src="https://github.com/user-attachments/assets/7d077cdc-5c1b-497f-bf9d-7912c1e889fb" />
 <img width="382" height="516" alt="Screenshot 2026-09-20 174226" src="https://github.com/user-attachments/assets/375ac525-b4b6-4a89-acd2-24b143a949e9" />
 <img width="678" height="242" alt="Screenshot 2026-09-20 174343" src="https://github.com/user-attachments/assets/edaec710-af87-4338-8faa-b0b207de1238" />
-
-
-# MORE IMAGES IN `/PCB`!!!!!!!!
 
 # Looking back
 
@@ -70,7 +67,7 @@ There is a lot of different files.
 
  - `firmware/dashboard`: The dashboard for controlling and viewing telemetry data. Use `pnpm i` to install, `pnpm run dev` to run.
  - `firmware/mainboard-firmware`: Please use the Arduino IDE and compile for your RPi Pico board.
- - `firmware/pc-code`: Use `uv run camera_server.py` to host the cameras (loads three) and `uv run main.py` to host the communication layer between the mainboard and the web dashboard.
+ - `firmware/pc-code`: Python backend for telemetry and cameras. Install dependencies with `pip install -r requirements.txt` (or use `uv run`). Run `python camera_server.py` to host the cameras (loads three) and `python main.py` to host the communication layer between the mainboard and the web dashboard.
  - `firmware/servo-firmware`: Please use PlatformIO in VSCode (or similar) and compile. You will need a UPDI programmer to upload the code to the MG996Rs containing ATtiny3216s. Note that the servos cannot output any serial so you will have to rely on LEDs if it's not communicating with the mainboard!
 
 ## VR
