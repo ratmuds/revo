@@ -20,6 +20,8 @@ revo is a robot arm I made that is 6 DoF, and is equipped with 12 PCBs (5 unique
 
 <img width="400" height="225" alt="20260920_110023_1 (2) (1)" src="https://github.com/user-attachments/assets/ce5229cd-cb60-42fb-a54a-bdfd74ca1c91" />
 
+<img width="400" height="200" alt="ezgif com-optimize" src="https://github.com/user-attachments/assets/dc3dece9-f52a-47a2-a2fe-77bd43e331a1" />
+
 # Why?
 
 I wanted to make a robot arm that punched above its weight. The price is pretty similar to smaller robot arms on Amazon that may not include cameras, which would need to be purchased separately. The way this is achieved is by using cheap servos, servos that are 100% NOT made for this purpose, and adding most of the functionality of a smart servo back by using a TON of PCBs. It was a lot of soldering. I just wanted to make something that had more features for less money :)
