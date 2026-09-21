@@ -8,6 +8,18 @@
 
 a cool robot arm
 
+## Some images
+
+# MORE IMAGES IN `/PCB`!!!!!!!!
+
+<img width="671" height="224" alt="Screenshot 2026-09-20 174516" src="https://github.com/user-attachments/assets/c969aab0-12bd-467e-b1e3-4f70ca88bbfd" />
+<img width="550" height="430" alt="Screenshot 2026-09-20 174107" src="https://github.com/user-attachments/assets/7d077cdc-5c1b-497f-bf9d-7912c1e889fb" />
+<img width="382" height="516" alt="Screenshot 2026-09-20 174226" src="https://github.com/user-attachments/assets/375ac525-b4b6-4a89-acd2-24b143a949e9" />
+<img width="678" height="242" alt="Screenshot 2026-09-20 174343" src="https://github.com/user-attachments/assets/edaec710-af87-4338-8faa-b0b207de1238" />
+
+
+# MORE IMAGES IN `/PCB`!!!!!!!!
+
 ## Bill of Materials (this is so so so long)
 
 ### Hardware & Components
