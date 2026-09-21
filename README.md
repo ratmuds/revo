@@ -17,11 +17,13 @@ a cool robot arm
 
 revo is a robot arm I made that is 6 DoF, and is equipped with 12 PCBs (5 unique designs), multiple cameras, many microcontrollers, and a lot of files
 
+<img width="400" height="225" alt="20260920_110023_1 (2) (1)" src="https://github.com/user-attachments/assets/ce5229cd-cb60-42fb-a54a-bdfd74ca1c91" />
+
 # Why?
 
 I wanted to make a robot arm that punched above it's weight. The price is pretty similar to smaller robot arms on Amazon that may not include cameras, which would need to be purchased seperately. The way this is achieved by using cheap servos, servos that are 100% NOT made for this purpose, and adding most of the functionality of a smart servo back by using a TON of PCBs. It was a lot of soldering. I just wanted to make something that had more features for less money :)
 
-# add image here of a bunch of PCBs here
+<img width="400" height="225" alt="20260702_180830" src="https://github.com/user-attachments/assets/9b1d1fba-f3f2-43e5-b712-aca054bbc806" />
 
 ### Motors
 
@@ -29,20 +31,19 @@ Each motor has voltage, current, and a connector for a NTC thermistor for temper
 
 Each MG996R servo has two JST-VH connectors and two JST-1.25mm connectors. They daisy chain 6V and a RS-485 bus for reliable data transfer. The daisy chaining helps with the wiring, and the differential signals help with noise resistance and the distance. Each servo compares a checksum and magic byte that is received to verify data integrity before loading it into structs and using the data. They have multiple LEDs to provide information such as errors, calibration status, data corruption, invalid PCB ID, code alive status, etc.
 
-# add image of the thing here
+<img width="400" height="225" alt="20260907_163033" src="https://github.com/user-attachments/assets/a017e20e-25c8-4bfb-a000-0b54dd0aa2d4" />
 
 ### Mainboard
 
 The mainboard has a RPi Pico for controlling, and a bunch of sensors for the DS5180 servo motors. The mainboard also has a two step power circuit that requires a logic signal from the Pico and the E-STOP to be depressed to allow the electricity to flow through. This is then routed to 3 seperate buck modules that regulate the voltage. There is a 6V module for the MG996Rs, and two 7.4V modules for the DS5180s. There also is two smaller modules for 12V and 3.3V.
 
+<img width="400" height="222" alt="20260705_112805" src="https://github.com/user-attachments/assets/fbf79def-7233-41fd-b6b3-e325a6a809f9" />
+
 ### Control
 
 There are multiple ways to control the robot arm, such as manually controlling the values in the dashboard, dragging IK in the dashboard, or the coolest way, VR. You can see it in action in the demo video above :)
 
-
-# add images
-
-# add image of servo case CAD here
+<img width="448" height="210" alt="image" src="https://github.com/user-attachments/assets/deb475fa-b1bd-4878-b2d7-fd38e093a1e8" />
 
 ## Some images
 
