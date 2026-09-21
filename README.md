@@ -13,6 +13,37 @@ a cool robot arm
 
 ![Watch the video](https://www.youtube.com/watch?v=T2Xa6mJVtoo)
 
+# What is it?
+
+revo is a robot arm I made that is 6 DoF, and is equipped with 12 PCBs (5 unique designs), multiple cameras, many microcontrollers, and a lot of files
+
+# Why?
+
+I wanted to make a robot arm that punched above it's weight. The price is pretty similar to smaller robot arms on Amazon that may not include cameras, which would need to be purchased seperately. The way this is achieved by using cheap servos, servos that are 100% NOT made for this purpose, and adding most of the functionality of a smart servo back by using a TON of PCBs. It was a lot of soldering. I just wanted to make something that had more features for less money :)
+
+# add image here of a bunch of PCBs here
+
+### Motors
+
+Each motor has voltage, current, and a connector for a NTC thermistor for temperature monitoring. The MG996R servos each have a sensor PCB that plugs in and provides angle data via a AS5600 IC and another IC for a magnetic endstop since I had issues with physical endstops before. The MG996R needs a custom case to mount everything, which took me an incredible amount of time to get working due to super weird tolerances, especially the way I have it working requiring a seperate 3D printed extension for the shaft to mount a magnet. The code also has to track this magnet super fast and track how many full revolutions it makes, and calculates the correct real angle from that. It's also running LADRC instead of basic sweep or PID, which has helped a little with jittering and general inaccuracies.
+
+Each MG996R servo has two JST-VH connectors and two JST-1.25mm connectors. They daisy chain 6V and a RS-485 bus for reliable data transfer. The daisy chaining helps with the wiring, and the differential signals help with noise resistance and the distance. Each servo compares a checksum and magic byte that is received to verify data integrity before loading it into structs and using the data. They have multiple LEDs to provide information such as errors, calibration status, data corruption, invalid PCB ID, code alive status, etc.
+
+# add image of the thing here
+
+### Mainboard
+
+The mainboard has a RPi Pico for controlling, and a bunch of sensors for the DS5180 servo motors. The mainboard also has a two step power circuit that requires a logic signal from the Pico and the E-STOP to be depressed to allow the electricity to flow through. This is then routed to 3 seperate buck modules that regulate the voltage. There is a 6V module for the MG996Rs, and two 7.4V modules for the DS5180s. There also is two smaller modules for 12V and 3.3V.
+
+### Control
+
+There are multiple ways to control the robot arm, such as manually controlling the values in the dashboard, dragging IK in the dashboard, or the coolest way, VR. You can see it in action in the demo video above :)
+
+
+# add images
+
+# add image of servo case CAD here
+
 ## Some images
 
 # MORE IMAGES IN `/PCB`!!!!!!!!
@@ -24,6 +55,30 @@ a cool robot arm
 
 
 # MORE IMAGES IN `/PCB`!!!!!!!!
+
+# Looking back
+
+There are a lot of not great things with this arm. The mainboard is incredibly hard to assemble. The screws like to fall out. There are cables everywhere despite me trying to clean it up a bit. And it's inaccurate. But that's because the motors I'm using are literally like $5 each. I would recommend better motors if you want to make a robot arm, but this project was just to see if I could do it and pushing my limits in all fields like programming, electronics, and CAD/mechanical design.
+
+# "Installation"
+
+## Please do not replicate this robot arm.
+It is a proof of concept that is not ready for real world use. There are no instructions for building it because of that reason. It is a fragile piece of robotics and not meant for any sort of practical usage or replication! If you really want to, it's not that difficult though if you look through the CAD :)
+
+There is a lot of different files.
+
+ - `firmware/dashboard`: The dashboard for controlling and viewing telemetry data. Use `pnpm i` to install, `pnpm run dev` to run.
+ - `firmware/mainboard-firmware`: Please use the Arduino IDE and compile for your RPi Pico board.
+ - `firmware/pc-code`: Use `uv run camera_server.py` to host the cameras (loads three) and `uv run main.py` to host the communication layer between the mainboard and the web dashboard.
+ - `firmware/servo-firmware`: Please use PlatformIO in VSCode (or similar) and compile. You will need a UPDI programmer to upload the code to the MG996Rs containing ATtiny3216s. Note that the servos cannot output any serial so you will have to rely on LEDs if it's not communicating with the mainboard!
+
+## VR
+
+I used a Meta Quest 2 and used the Link app on my PC (GPU required) and you can go to `localhost:5173/VR` while hosting the dashboard to access the WebXR page.
+
+## PCBs
+
+The five PCB designs are in the `/PCB` folder. There are more images in that folder for reference. I ordered them and hand soldered them, which took a long time but I got faster as time went on.
 
 ## Bill of Materials (this is so so so long)
 
