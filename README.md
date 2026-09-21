@@ -11,7 +11,7 @@ a cool robot arm
 <img width="1487" height="782" alt="image" src="https://github.com/user-attachments/assets/d1c303de-a520-447c-8deb-7a144a126fa4" />
 
 
-![Watch the video](https://www.youtube.com/watch?v=T2Xa6mJVtoo)
+[![Watch the video](https://www.youtube.com/watch?v=T2Xa6mJVtoo)](https://www.youtube.com/watch?v=T2Xa6mJVtoo)
 
 # What is it?
 
