@@ -1,5 +1,11 @@
 # revo
 
+[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?repo=https://github.com/ratmuds/revo/tree/main/PCB/revo-joint-encoder)
+[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?repo=https://github.com/ratmuds/revo/tree/main/PCB/revo-main-bottom)
+[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?repo=https://github.com/ratmuds/revo/tree/main/PCB/revo-main)
+[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?repo=https://github.com/ratmuds/revo/tree/main/PCB/revo-servo-hat)
+[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?repo=https://github.com/ratmuds/revo/tree/main/PCB/revo-servo)
+
 a cool robot arm
 
 ## Bill of Materials (this is so so so long)
