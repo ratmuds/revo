@@ -84,6 +84,10 @@ The five PCB designs are in the `/PCB` folder. There are more images in that fol
 
 ## Bill of Materials (this is so so so long)
 
+<img width="500" height="281" alt="20260615_192504" src="https://github.com/user-attachments/assets/db04bb3f-e5e2-406b-99d9-e3d031916e54" />
+<img width="500" height="281.5" alt="20260615_191044" src="https://github.com/user-attachments/assets/0fc3e313-c859-4100-91e6-400635b036a0" />
+
+
 ### Hardware & Components
 
 Please don't actually build this project, but if you do ORDER SPARES!!!!!!
